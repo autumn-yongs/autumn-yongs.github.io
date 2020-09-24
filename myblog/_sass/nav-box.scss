@@ -1,0 +1,131 @@
+#nav-box {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	pointer-events: none;
+	z-index: 10;
+}
+
+#nav-box .button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 30px;
+	height: 60px;
+	margin-right: 25px;
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+#nav-box .icon-bar {
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: cornflowerblue;
+	margin: 3px 0;
+	transition: .3s;
+}
+
+#nav-box .bg {
+	position: absolute;
+	top: 60px;
+	width: 100%;
+	height: calc(100% - 60px);
+	visibility: hidden;
+	opacity: 0;
+	transition: .3s;
+	background-color: black;
+}
+
+#nav-box:focus-within .bg {
+	visibility: visible;
+	opacity: .6;
+}
+
+#nav-box .content {
+	position: absolute;
+	top: 60px;
+	width: 90%;
+	right: -100%;
+	max-width: 300px;
+	height: calc(100% - 60px);
+	background-color: cornflowerblue;
+	pointer-events: auto;
+	transition: .3s;
+	visibility: none;
+}
+
+#nav-box ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+#nav-box li a {
+	display: block;
+	padding: 8px 15px;
+	border-bottom: solid 0.1px bisque;
+	text-decoration: none;
+	background-color: transparent;
+	color: beige;
+	transition: .3s;
+}
+
+#nav-box li .sub {
+	padding-left: 35px;
+}
+
+#nav-box:focus-within .button {
+	pointer-events: none;
+}
+
+#nav-box:focus-within .icon-bar:nth-of-type(1) {
+  transform: translate3d(0,9px,0) rotate(45deg);
+}
+
+#nav-box:focus-within .icon-bar:nth-of-type(2) {
+  opacity: 0;
+}
+
+#nav-box:focus-within .icon-bar:nth-of-type(3) {
+  transform: translate3d(0,-9px,0) rotate(-45deg);
+}
+
+#nav-box:focus-within .content {
+	right: 0;
+	visibility: visible;
+}
+
+#nav-box li a:hover {
+	background-color: lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

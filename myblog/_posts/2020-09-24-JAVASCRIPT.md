@@ -1,0 +1,6 @@
+---
+layout: post
+title: JAVASCRIPT에 대하여
+categories: [ JAVASCRIPT ]
+---
+매일 내가 배운 것들을 정리하고 흔적을 남기려 한다. Jekyll을 처음 사용해봐서 아직은 형편없는 블로그지만, 이것 저것 공부하며 내용을 채워나가면 훌륭한 블로그가 될 것이라고 생각한다.

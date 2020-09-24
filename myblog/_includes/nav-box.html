@@ -1,0 +1,20 @@
+<div id="nav-box">
+	<div class="button" tabindex="0">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</div>
+	<div class="bg"></div>
+	<div class="content">
+		<ul>
+			{% for item in site.data.menu %}
+				<li><a href="{{ item.link }}"
+					{% if item.sub == true %}
+						class="sub"
+					{% endif %}>
+					{{ item.name }}
+				</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

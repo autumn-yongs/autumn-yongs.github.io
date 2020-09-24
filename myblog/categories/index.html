@@ -1,0 +1,26 @@
+---
+layout: categories
+title: Autumn-yongs' blog
+---
+<div>
+	<br>
+</div>
+{% assign sorted_cats = site.categories | sort %}
+{% for category in sorted_cats %}
+<div id="{{ category[0] }}" class="category-box">
+	<h2>{{ category[0] }}</h2>
+	<ul>
+		{% for post in category[1] %}
+		<li>
+			<a href="{{ post.url }}">
+				{{ post.title }}
+				<span>{{ post.date | date_to_string }}</span>
+			</a>
+		</li>
+		{% endfor %}
+	</ul>	
+</div>
+{% endfor %}
+<div>
+	<br>
+</div>
