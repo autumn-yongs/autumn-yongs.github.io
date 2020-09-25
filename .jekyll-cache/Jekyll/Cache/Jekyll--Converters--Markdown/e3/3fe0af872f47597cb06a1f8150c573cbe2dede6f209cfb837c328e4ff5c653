@@ -1,0 +1,20 @@
+I"�<h3 id="들어가며">들어가며</h3>
+<p>Jekyll 블로그를 운영하려고 하는데, 포스트를 마크다운 언어로 작성한다고 해서 배워보았다.</p>
+
+<h2 id="마크다운markdown-문법">마크다운(Markdown) 문법</h2>
+
+<h3 id="1-헤더header">1. 헤더(Header)</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6
+</span></code></pre></div></div>
+<h1 id="header-1">Header 1</h1>
+<h2 id="header-2">Header 2</h2>
+<h3 id="header-3">Header 3</h3>
+<h4 id="header-4">Header 4</h4>
+<h5 id="header-5">Header 5</h5>
+<h6 id="header-6">Header 6</h6>
+:ET

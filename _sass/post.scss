@@ -1,0 +1,39 @@
+#post {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+#post .title {
+	padding-top: 50px;
+	margin-top: 0;
+	color: dimgray;
+}
+
+#post .date {
+	color: gray;
+}
+
+#post hr {
+	margin: 20px 0;
+}
+
+#post ul {
+	padding-left: 30px;
+}
+
+#post h1,
+#post h2,
+#post h3,
+#post h4,
+#post h5,
+#post h6 {
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+#post p {
+	margin: 10px 0;
+}
+
+#post .blank {
+	height: 300px;
+}
