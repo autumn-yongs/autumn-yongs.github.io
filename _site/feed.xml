@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-09-25T02:30:56+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><entry><title type="html">[GIT] 생활코딩_1: 기본적인 명령어 사용법</title><link href="http://0.0.0.0:4000/git/2020/09/24/GIT.html" rel="alternate" type="text/html" title="[GIT] 생활코딩_1: 기본적인 명령어 사용법" /><published>2020-09-24T00:00:00+00:00</published><updated>2020-09-24T00:00:00+00:00</updated><id>http://0.0.0.0:4000/git/2020/09/24/GIT</id><content type="html" xml:base="http://0.0.0.0:4000/git/2020/09/24/GIT.html">&lt;h3 id=&quot;들어가며&quot;&gt;들어가며&lt;/h3&gt;
+
+&lt;p&gt;이고잉님의 &lt;strong&gt;지옥에서 온 Git&lt;/strong&gt; 강의 내용 일부이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/hFJZwOfme6w&quot;&gt;‘지옥에서 온 Git’ 유튜브 링크&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;요약&quot;&gt;요약&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;stage area&lt;/strong&gt; :&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;git init&lt;/strong&gt; : 현재 디렉토리를 root 디렉토리로 하는 프로젝트의 버전관리 디렉토리(.git)를 생성&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;git add [filename]&lt;/strong&gt; : 프로젝트의 현재 상태를 .git 파일에 저장&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;git status&lt;/strong&gt; : 현재 프로젝트의 상태와 .git에 저장된 프로젝트의 상태를 비교&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="GIT" /><summary type="html">들어가며</summary></entry><entry><title type="html">[Jekyll] 마크다운(Markdown) 사용법 정리</title><link href="http://0.0.0.0:4000/jekyll/2020/09/24/Jekyll.html" rel="alternate" type="text/html" title="[Jekyll] 마크다운(Markdown) 사용법 정리" /><published>2020-09-24T00:00:00+00:00</published><updated>2020-09-24T00:00:00+00:00</updated><id>http://0.0.0.0:4000/jekyll/2020/09/24/Jekyll</id><content type="html" xml:base="http://0.0.0.0:4000/jekyll/2020/09/24/Jekyll.html">&lt;h3 id=&quot;들어가며&quot;&gt;들어가며&lt;/h3&gt;
+&lt;p&gt;Jekyll 블로그를 운영하려고 하는데, 포스트를 마크다운 언어로 작성한다고 해서 배워보았다.&lt;/p&gt;
+
+&lt;h2 id=&quot;마크다운markdown-문법&quot;&gt;마크다운(Markdown) 문법&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-헤더header&quot;&gt;1. 헤더(Header)&lt;/h3&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;header-1&quot;&gt;Header 1&lt;/h1&gt;
+&lt;h2 id=&quot;header-2&quot;&gt;Header 2&lt;/h2&gt;
+&lt;h3 id=&quot;header-3&quot;&gt;Header 3&lt;/h3&gt;
+&lt;h4 id=&quot;header-4&quot;&gt;Header 4&lt;/h4&gt;
+&lt;h5 id=&quot;header-5&quot;&gt;Header 5&lt;/h5&gt;
+&lt;h6 id=&quot;header-6&quot;&gt;Header 6&lt;/h6&gt;</content><author><name></name></author><category term="Jekyll" /><summary type="html">들어가며 Jekyll 블로그를 운영하려고 하는데, 포스트를 마크다운 언어로 작성한다고 해서 배워보았다.</summary></entry><entry><title type="html">TIL_200924</title><link href="http://0.0.0.0:4000/til/2020/09/24/TIL.html" rel="alternate" type="text/html" title="TIL_200924" /><published>2020-09-24T00:00:00+00:00</published><updated>2020-09-24T00:00:00+00:00</updated><id>http://0.0.0.0:4000/til/2020/09/24/TIL</id><content type="html" xml:base="http://0.0.0.0:4000/til/2020/09/24/TIL.html">&lt;h1 id=&quot;2020년-9월-24일&quot;&gt;2020년 9월 24일&lt;/h1&gt;
+
+&lt;h2 id=&quot;오늘-공부한-내용&quot;&gt;오늘 공부한 내용&lt;/h2&gt;
+
+&lt;h3 id=&quot;블로그-꾸미기&quot;&gt;블로그 꾸미기&lt;/h3&gt;
+
+&lt;p&gt;테마를 쓰면 쉽게 꾸밀 수 있다. 하지만, 남들이 만든 테마를 그냥 주워다가 쓰기는 싫었다. 궁금한건 직접 뜯어보며 그 원리를 파악해야 직성이 풀리는 성격이라, 6시간 가량을 사지방에서 씨름했다. 클릭 한 번에 숨겨진 메뉴바가 튀어나오게 하는게 무척이나 어려웠다.&lt;/p&gt;
+
+&lt;h3 id=&quot;마크다운markdown&quot;&gt;마크다운(Markdown)&lt;/h3&gt;
+
+&lt;p&gt;약 10년 전, 네이버 블로그를 운영해본 경험이 있다. 유튜브에서 클래식 영상을 가지고 와서 블로그에 올려놓고 그와 관련된 이야기를 늘어놓는 블로그였다. 그 때의 나는 저작권이라는 개념도 없었고, 그저 방문자 수가 점점 늘어가는 것에 신기해했던 나였다. 어쨌거나 지금은 비공개로 해놨다. 그 때에는 네이버에서 제공하는 에디터로 편하게 글을 썼다. 사진도 그렇고 영상도 그렇고. Jekyll에서는 글을 어떻게 쓰나 궁금했었는데, 마크다운 언어로 글을 쓸 수 있다고 한다. 네이버 에디터만큼 편하지는 않겠지만, Notepad로도 편하게 글을 쓸 수 있는데다가(문법만 알고있다면 언제어디서나 글을 쓸 수 있다!), HTML로 멋지게 변환된다고 하길래 배워보았다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;일기&quot;&gt;일기&lt;/h2&gt;
+
+&lt;h3 id=&quot;지금까지-걸어온-길&quot;&gt;지금까지 걸어온 길&lt;/h3&gt;
+
+&lt;p&gt;컴퓨터에 관심을 갖게 된 지는 2년 정도, 웹 개발에 발을 들여놓게 된 지는 1년 정도 되었다. 한 주제에 푹 빠져서 오랜기간 코딩을 해 본 경험은 없지만, 꾸준했던 관심때문에 생각보다 많은 언어와 기술들을 접해본 것같다.&lt;/p&gt;
+
+&lt;p&gt;대학교 입학과 동시에 접했던 &lt;strong&gt;C언어&lt;/strong&gt;. C언어 배우면 다들 한다던 &lt;strong&gt;JAVA&lt;/strong&gt;. 웹 개발 공부를 하며 공부했던 &lt;strong&gt;HTML/CSS/JS&lt;/strong&gt;. Javascript의 무한한 가능성을 맛 볼 수 있었던 &lt;strong&gt;node.js&lt;/strong&gt;. 처음으로 서버, 라우팅, 호스팅 등에 대해서 배울 수 있었던 &lt;strong&gt;Express.js&lt;/strong&gt;. &lt;strong&gt;Selenium&lt;/strong&gt;을 이용한 브라우저 자동화와 크롤링. codecademy라는 사이트에서 &lt;strong&gt;React&lt;/strong&gt;와 &lt;strong&gt;GraphQL&lt;/strong&gt;을 배웠다.&lt;/p&gt;
+
+&lt;p&gt;이 외에 &lt;strong&gt;Python&lt;/strong&gt;도 해봤고, &lt;strong&gt;Django&lt;/strong&gt;로 웹페이지도 만들어봤다. &lt;strong&gt;C++&lt;/strong&gt;로 알고리즘 문제도 풀어보았다. 세상에는 참 똑똑한 사람들이 많다. 인터넷 세상에는 뉴비들도 쉽게 따라할 수 있을 정도로 친절한 각종 Document와 Tutorial들이 넘쳐난다.&lt;/p&gt;
+
+&lt;h3 id=&quot;입대&quot;&gt;입대&lt;/h3&gt;
+
+&lt;p&gt;군대에 들어오니 생각이 많아진다. 내가 걸어왔던 길을 다시 되돌아보기도 하고, (아직 보이지는 않지만) 전역 후에 대한 고민을 하기도 한다. 지난 2년 동안의 대학생활을 돌아보고, 적지 않은 경험에 비해 남은 건 하나도 없다는 생각이 종종 들고는 한다. 지금 다시 JAVA로 계산기를 만들어보라고 하면, 뚝딱뚝딱 만들어낼 자신이 없다. 유튜브 영상, 강의만 보고도 충분히 그 문법과 구조들이 이해가 된다고 착각해서 잃어버린 개념들이 너무나도 많은 것같다.&lt;/p&gt;
+
+&lt;h3 id=&quot;계획&quot;&gt;계획&lt;/h3&gt;
+
+&lt;p&gt;나도 내가 도움을 받았던 글과 영상을 남긴 그들처럼 인터넷 세상에 글을 남겨보고자 한다. Git-hub과 관련하여 1일 1커밋이라는 말을 들어본 적은 있는데, TIL(Today I Learned)이라는 것은 처음 들어보았다. 1일 1커밋과 비슷한 형식으로, 그날 그날 내가 배운 것을 정리하고 흔적을 남기는 것을 말하는 것같다. 다시 처음부터 배운다는 느낌으로, 내가 배우고 공부한 것들에 대해 이 블로그에 한 줄 한 줄 흔적을 남겨보려 한다.&lt;/p&gt;
+
+&lt;p&gt;Jekyll에서 블로그를 운영할 계획이므로, markdown과 git-hub에 익숙해져야한다. 시간이 좀 걸릴 것같다. 홈페이지가 안정화되고, 안정적으로 블로그를 관리하기 위해서는 당분간은 로컬에서 블로그를 운영해야할 것같다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;내일-공부할-내용&quot;&gt;내일 공부할 내용&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;포스트에 태그, 댓글 기능 추가&lt;/li&gt;
+  &lt;li&gt;markdown 공부 내용 기록&lt;/li&gt;
+  &lt;li&gt;markdown 테마 입히기&lt;/li&gt;
+  &lt;li&gt;생활코딩 GIT 공부&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="TIL" /><summary type="html">2020년 9월 24일</summary></entry><entry><title type="html">TIL_200923</title><link href="http://0.0.0.0:4000/til/2020/09/23/TIL.html" rel="alternate" type="text/html" title="TIL_200923" /><published>2020-09-23T00:00:00+00:00</published><updated>2020-09-23T00:00:00+00:00</updated><id>http://0.0.0.0:4000/til/2020/09/23/TIL</id><content type="html" xml:base="http://0.0.0.0:4000/til/2020/09/23/TIL.html">&lt;p&gt;매일 내가 배운 것들을 정리하고 흔적을 남기려 한다. Jekyll을 처음 사용해봐서 아직은 형편없는 블로그지만, 이것 저것 공부하며 내용을 채워나가면 훌륭한 블로그가 될 것이라고 생각한다.&lt;/p&gt;</content><author><name></name></author><category term="TIL" /><summary type="html">매일 내가 배운 것들을 정리하고 흔적을 남기려 한다. Jekyll을 처음 사용해봐서 아직은 형편없는 블로그지만, 이것 저것 공부하며 내용을 채워나가면 훌륭한 블로그가 될 것이라고 생각한다.</summary></entry></feed>
