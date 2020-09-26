@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-09-25T02:30:56+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><entry><title type="html">[GIT] 생활코딩_1: 기본적인 명령어 사용법</title><link href="http://0.0.0.0:4000/git/2020/09/24/GIT.html" rel="alternate" type="text/html" title="[GIT] 생활코딩_1: 기본적인 명령어 사용법" /><published>2020-09-24T00:00:00+00:00</published><updated>2020-09-24T00:00:00+00:00</updated><id>http://0.0.0.0:4000/git/2020/09/24/GIT</id><content type="html" xml:base="http://0.0.0.0:4000/git/2020/09/24/GIT.html">&lt;h3 id=&quot;들어가며&quot;&gt;들어가며&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-09-26T02:10:45+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><entry><title type="html">[Jekyll] s</title><link href="http://0.0.0.0:4000/jekyll/2020/09/26/Jekyll.html" rel="alternate" type="text/html" title="[Jekyll] s" /><published>2020-09-26T00:00:00+00:00</published><updated>2020-09-26T00:00:00+00:00</updated><id>http://0.0.0.0:4000/jekyll/2020/09/26/Jekyll</id><content type="html" xml:base="http://0.0.0.0:4000/jekyll/2020/09/26/Jekyll.html"></content><author><name></name></author><category term="Jekyll" /><summary type="html"></summary></entry><entry><title type="html">[GIT] 생활코딩_1: 기본적인 명령어 사용법</title><link href="http://0.0.0.0:4000/git/2020/09/24/GIT.html" rel="alternate" type="text/html" title="[GIT] 생활코딩_1: 기본적인 명령어 사용법" /><published>2020-09-24T00:00:00+00:00</published><updated>2020-09-24T00:00:00+00:00</updated><id>http://0.0.0.0:4000/git/2020/09/24/GIT</id><content type="html" xml:base="http://0.0.0.0:4000/git/2020/09/24/GIT.html">&lt;h3 id=&quot;들어가며&quot;&gt;들어가며&lt;/h3&gt;
 
 &lt;p&gt;이고잉님의 &lt;strong&gt;지옥에서 온 Git&lt;/strong&gt; 강의 내용 일부이다.&lt;/p&gt;
 
@@ -16,13 +16,17 @@
 &lt;h2 id=&quot;마크다운markdown-문법&quot;&gt;마크다운(Markdown) 문법&lt;/h2&gt;
 
 &lt;h3 id=&quot;1-헤더header&quot;&gt;1. 헤더(Header)&lt;/h3&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-###### Header 6
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;##&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;###&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;####&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#####&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;######&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h1 id=&quot;header-1&quot;&gt;Header 1&lt;/h1&gt;
 &lt;h2 id=&quot;header-2&quot;&gt;Header 2&lt;/h2&gt;
 &lt;h3 id=&quot;header-3&quot;&gt;Header 3&lt;/h3&gt;
