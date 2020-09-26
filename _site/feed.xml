@@ -1,77 +1,366 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-09-26T02:10:45+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><entry><title type="html">[Jekyll] s</title><link href="http://0.0.0.0:4000/jekyll/2020/09/26/Jekyll.html" rel="alternate" type="text/html" title="[Jekyll] s" /><published>2020-09-26T00:00:00+00:00</published><updated>2020-09-26T00:00:00+00:00</updated><id>http://0.0.0.0:4000/jekyll/2020/09/26/Jekyll</id><content type="html" xml:base="http://0.0.0.0:4000/jekyll/2020/09/26/Jekyll.html"></content><author><name></name></author><category term="Jekyll" /><summary type="html"></summary></entry><entry><title type="html">[GIT] 생활코딩_1: 기본적인 명령어 사용법</title><link href="http://0.0.0.0:4000/git/2020/09/24/GIT.html" rel="alternate" type="text/html" title="[GIT] 생활코딩_1: 기본적인 명령어 사용법" /><published>2020-09-24T00:00:00+00:00</published><updated>2020-09-24T00:00:00+00:00</updated><id>http://0.0.0.0:4000/git/2020/09/24/GIT</id><content type="html" xml:base="http://0.0.0.0:4000/git/2020/09/24/GIT.html">&lt;h3 id=&quot;들어가며&quot;&gt;들어가며&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-09-26T11:14:06+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><entry><title type="html">[GIT] Opentutorials_1: How to use Git on local</title><link href="http://0.0.0.0:4000/git/2020/09/26/GIT.html" rel="alternate" type="text/html" title="[GIT] Opentutorials_1: How to use Git on local" /><published>2020-09-26T00:00:00+00:00</published><updated>2020-09-26T00:00:00+00:00</updated><id>http://0.0.0.0:4000/git/2020/09/26/GIT</id><content type="html" xml:base="http://0.0.0.0:4000/git/2020/09/26/GIT.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
 
-&lt;p&gt;이고잉님의 &lt;strong&gt;지옥에서 온 Git&lt;/strong&gt; 강의 내용 일부이다.&lt;/p&gt;
+&lt;p&gt;This article is a part of Egoing’s youtube lecture &lt;strong&gt;지옥에서 온 Git (Git from the hell)&lt;/strong&gt;. Contents might not be exactly same with the sequence of lectures as I reorganized that in my way.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://youtu.be/hFJZwOfme6w&quot;&gt;‘지옥에서 온 Git’ 유튜브 링크&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#reference&quot;&gt;지옥에서 온 Git (Git from the hell)&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;요약&quot;&gt;요약&lt;/h3&gt;
+&lt;p&gt;Reading my article or not depends on you, but if you want to read super accurate and trustworthy document, take this Git’s official document.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#reference&quot;&gt;Official Git Website&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;stage area&lt;/strong&gt; :&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;git init&lt;/strong&gt; : 현재 디렉토리를 root 디렉토리로 하는 프로젝트의 버전관리 디렉토리(.git)를 생성&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;git add [filename]&lt;/strong&gt; : 프로젝트의 현재 상태를 .git 파일에 저장&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;git status&lt;/strong&gt; : 현재 프로젝트의 상태와 .git에 저장된 프로젝트의 상태를 비교&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="GIT" /><summary type="html">들어가며</summary></entry><entry><title type="html">[Jekyll] 마크다운(Markdown) 사용법 정리</title><link href="http://0.0.0.0:4000/jekyll/2020/09/24/Jekyll.html" rel="alternate" type="text/html" title="[Jekyll] 마크다운(Markdown) 사용법 정리" /><published>2020-09-24T00:00:00+00:00</published><updated>2020-09-24T00:00:00+00:00</updated><id>http://0.0.0.0:4000/jekyll/2020/09/24/Jekyll</id><content type="html" xml:base="http://0.0.0.0:4000/jekyll/2020/09/24/Jekyll.html">&lt;h3 id=&quot;들어가며&quot;&gt;들어가며&lt;/h3&gt;
-&lt;p&gt;Jekyll 블로그를 운영하려고 하는데, 포스트를 마크다운 언어로 작성한다고 해서 배워보았다.&lt;/p&gt;
+  &lt;li&gt;Git is a &lt;strong&gt;version control system&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Git is similar to Dropbox/Google Drive, but the difference is that, with Git, you can manage version by &lt;strong&gt;not changing the file name&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h2 id=&quot;마크다운markdown-문법&quot;&gt;마크다운(Markdown) 문법&lt;/h2&gt;
+&lt;h3 id=&quot;before-start-project&quot;&gt;Before start project&lt;/h3&gt;
 
-&lt;h3 id=&quot;1-헤더header&quot;&gt;1. 헤더(Header)&lt;/h3&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;##&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;###&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;####&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;#####&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;######&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ cd [path]&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;You have to move to your project’s root directory. If you don’t have, you have to make new one called &lt;strong&gt;Working Directory&lt;/strong&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Your identity
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git config --global user.name [user-name]&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git config --global user.email [user-email]&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Whenever you use Git(more exactly, commit), it uses this information. You need to do this only once if you pass &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--global&lt;/code&gt; option. If you want to use different username and email for specific projects, run the commands without &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--global&lt;/code&gt; option in that project.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git config --list&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;You can view all of your settings.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git init&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Create &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.git&lt;/code&gt; directory that contains all of your necessary repository files, and that directory is called &lt;strong&gt;Git Directory&lt;/strong&gt; or &lt;strong&gt;Repository&lt;/strong&gt;. Project’s &lt;strong&gt;Skeleton&lt;/strong&gt; locates on there.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
+&lt;h3 id=&quot;during-project&quot;&gt;During project&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Git has three main states that your files can reside in:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Modified&lt;/strong&gt; : Modified means that you have changed the file but have not committed it to your database yet.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Staged&lt;/strong&gt; : Staged means that you have marked a modified file in its current version to go into your next commit snapshot.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Committed&lt;/strong&gt; : Committed means that the data is safely stored in your local database.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git add [filename]&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Add your present status to &lt;strong&gt;staging area&lt;/strong&gt; in git directory. Your project’s status becomes &lt;strong&gt;staged&lt;/strong&gt;, which means ready to go into next commit.&lt;/li&gt;
+      &lt;li&gt;You can use some wildcards(ex. *, .) to express files that you want to put on stage.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git status&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;You can check your project’s state. If you changed some of project’s files after your last “staged” status, this command shows you where is modified. This means Git is always tracking your project.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git commit -m &quot;Write your commit message&quot;&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Leave traces on your git log with your message, and that commit becomes a part of your version system.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git log&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;This shows your commit history. Check your traces with each version’s information. Each commit’s unique id value is on its first line. You can go back to specific version using its id(Let’s do it later!).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git commit -a -m &quot;Write your commit message&quot;&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Skipping the staging area. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-a&lt;/code&gt; means ‘add’ and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-m&lt;/code&gt; means ‘message’.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;interact-with-remote-repository&quot;&gt;Interact with remote repository&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git push -u remote origin&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/hFJZwOfme6w&quot;&gt;지옥에서 온 Git (Git from the hell)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/en/v2&quot;&gt;Official Git Website&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="GIT" /><summary type="html">Preface</summary></entry><entry><title type="html">[Jekyll] How to use Markdown</title><link href="http://0.0.0.0:4000/jekyll/2020/09/26/Jekyll.html" rel="alternate" type="text/html" title="[Jekyll] How to use Markdown" /><published>2020-09-26T00:00:00+00:00</published><updated>2020-09-26T00:00:00+00:00</updated><id>http://0.0.0.0:4000/jekyll/2020/09/26/Jekyll</id><content type="html" xml:base="http://0.0.0.0:4000/jekyll/2020/09/26/Jekyll.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+&lt;p&gt;On Jekyll blog, posts are written in markdown language.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-write-markdown&quot;&gt;How to write markdown&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-heading&quot;&gt;1. Heading&lt;/h3&gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# This is Header 1
+## This is Header 2
+### This is Header 3
+#### This is Header 4
+##### This is Header 5
+###### This is Header 6
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;this-is-header-2&quot;&gt;This is Header 2&lt;/h2&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;They are wrapped with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;h?&amp;gt;&lt;/code&gt; tag when they are rendered.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-paragraph&quot;&gt;2. Paragraph&lt;/h3&gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is first line.
+This is second line.  
+This is third line.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;This is first line.
+This is second line.&lt;br /&gt;
+This is third line.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;They are wrapped with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag when they are rendered.&lt;/li&gt;
+  &lt;li&gt;If you want to make line break in paragraph, type two spaces and return. Or there would be a connected line.&lt;/li&gt;
+  &lt;li&gt;If you want to write other paragraph, type return twice. And that paragraph will be wrapped with new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-emphasis&quot;&gt;3. Emphasis&lt;/h3&gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is *italic text*.  
+This is _italic text_.  
+This is **bold text**.  
+This is __bold text__.  
+This is ***bold and italic text***.  
+This is ___bold and italic text___.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;This is &lt;em&gt;italic text&lt;/em&gt;.&lt;br /&gt;
+This is &lt;em&gt;italic text&lt;/em&gt;.&lt;br /&gt;
+This is &lt;strong&gt;bold text&lt;/strong&gt;.&lt;br /&gt;
+This is &lt;strong&gt;bold text&lt;/strong&gt;.&lt;br /&gt;
+This is &lt;strong&gt;&lt;em&gt;bold and italic text&lt;/em&gt;&lt;/strong&gt;.&lt;br /&gt;
+This is &lt;strong&gt;&lt;em&gt;bold and italic text&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;They are wrapped with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag when they are rendered.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;4-blockquote&quot;&gt;4. Blockquote&lt;/h3&gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; First Blockquote
+&amp;gt;&amp;gt; Second Blockquote
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;First Blockquote&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Second Blockquote&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;They are wrapped with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt; tag when they are rendered.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;5-list&quot;&gt;5. List&lt;/h3&gt;
+&lt;h3 id=&quot;5_1-ordered-list&quot;&gt;5_1. Ordered List&lt;/h3&gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. First
+2. Second
+3. Third
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+  &lt;li&gt;Third&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;They are wrapped with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;ol&amp;gt;&lt;/code&gt; tag when they are rendered.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;5_2-undordered-list&quot;&gt;5_2. Undordered List&lt;/h3&gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Case A
+  * Case A_1
+    + Case A_1_a
+  - Case A_2
+    + Case A_2_a
+      * Case A_2_a_i
++ Case B
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Case A
+    &lt;ul&gt;
+      &lt;li&gt;Case A_1
+        &lt;ul&gt;
+          &lt;li&gt;Case A_1_a&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Case A_2
+        &lt;ul&gt;
+          &lt;li&gt;Case A_2_a
+            &lt;ul&gt;
+              &lt;li&gt;Case A_2_a_i&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Case B&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;They are wrapped with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;ul&amp;gt;&lt;/code&gt; tag when they are rendered.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;6-code-blocks&quot;&gt;6. Code Blocks&lt;/h3&gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```javascript
+function printHello(){
+	console.log(&quot;Hello&quot;);
+}
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;printHello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h1 id=&quot;header-1&quot;&gt;Header 1&lt;/h1&gt;
-&lt;h2 id=&quot;header-2&quot;&gt;Header 2&lt;/h2&gt;
-&lt;h3 id=&quot;header-3&quot;&gt;Header 3&lt;/h3&gt;
-&lt;h4 id=&quot;header-4&quot;&gt;Header 4&lt;/h4&gt;
-&lt;h5 id=&quot;header-5&quot;&gt;Header 5&lt;/h5&gt;
-&lt;h6 id=&quot;header-6&quot;&gt;Header 6&lt;/h6&gt;</content><author><name></name></author><category term="Jekyll" /><summary type="html">들어가며 Jekyll 블로그를 운영하려고 하는데, 포스트를 마크다운 언어로 작성한다고 해서 배워보았다.</summary></entry><entry><title type="html">TIL_200924</title><link href="http://0.0.0.0:4000/til/2020/09/24/TIL.html" rel="alternate" type="text/html" title="TIL_200924" /><published>2020-09-24T00:00:00+00:00</published><updated>2020-09-24T00:00:00+00:00</updated><id>http://0.0.0.0:4000/til/2020/09/24/TIL</id><content type="html" xml:base="http://0.0.0.0:4000/til/2020/09/24/TIL.html">&lt;h1 id=&quot;2020년-9월-24일&quot;&gt;2020년 9월 24일&lt;/h1&gt;
-
-&lt;h2 id=&quot;오늘-공부한-내용&quot;&gt;오늘 공부한 내용&lt;/h2&gt;
-
-&lt;h3 id=&quot;블로그-꾸미기&quot;&gt;블로그 꾸미기&lt;/h3&gt;
-
-&lt;p&gt;테마를 쓰면 쉽게 꾸밀 수 있다. 하지만, 남들이 만든 테마를 그냥 주워다가 쓰기는 싫었다. 궁금한건 직접 뜯어보며 그 원리를 파악해야 직성이 풀리는 성격이라, 6시간 가량을 사지방에서 씨름했다. 클릭 한 번에 숨겨진 메뉴바가 튀어나오게 하는게 무척이나 어려웠다.&lt;/p&gt;
-
-&lt;h3 id=&quot;마크다운markdown&quot;&gt;마크다운(Markdown)&lt;/h3&gt;
-
-&lt;p&gt;약 10년 전, 네이버 블로그를 운영해본 경험이 있다. 유튜브에서 클래식 영상을 가지고 와서 블로그에 올려놓고 그와 관련된 이야기를 늘어놓는 블로그였다. 그 때의 나는 저작권이라는 개념도 없었고, 그저 방문자 수가 점점 늘어가는 것에 신기해했던 나였다. 어쨌거나 지금은 비공개로 해놨다. 그 때에는 네이버에서 제공하는 에디터로 편하게 글을 썼다. 사진도 그렇고 영상도 그렇고. Jekyll에서는 글을 어떻게 쓰나 궁금했었는데, 마크다운 언어로 글을 쓸 수 있다고 한다. 네이버 에디터만큼 편하지는 않겠지만, Notepad로도 편하게 글을 쓸 수 있는데다가(문법만 알고있다면 언제어디서나 글을 쓸 수 있다!), HTML로 멋지게 변환된다고 하길래 배워보았다.&lt;/p&gt;
 
 &lt;hr /&gt;
-
-&lt;h2 id=&quot;일기&quot;&gt;일기&lt;/h2&gt;
-
-&lt;h3 id=&quot;지금까지-걸어온-길&quot;&gt;지금까지 걸어온 길&lt;/h3&gt;
-
-&lt;p&gt;컴퓨터에 관심을 갖게 된 지는 2년 정도, 웹 개발에 발을 들여놓게 된 지는 1년 정도 되었다. 한 주제에 푹 빠져서 오랜기간 코딩을 해 본 경험은 없지만, 꾸준했던 관심때문에 생각보다 많은 언어와 기술들을 접해본 것같다.&lt;/p&gt;
-
-&lt;p&gt;대학교 입학과 동시에 접했던 &lt;strong&gt;C언어&lt;/strong&gt;. C언어 배우면 다들 한다던 &lt;strong&gt;JAVA&lt;/strong&gt;. 웹 개발 공부를 하며 공부했던 &lt;strong&gt;HTML/CSS/JS&lt;/strong&gt;. Javascript의 무한한 가능성을 맛 볼 수 있었던 &lt;strong&gt;node.js&lt;/strong&gt;. 처음으로 서버, 라우팅, 호스팅 등에 대해서 배울 수 있었던 &lt;strong&gt;Express.js&lt;/strong&gt;. &lt;strong&gt;Selenium&lt;/strong&gt;을 이용한 브라우저 자동화와 크롤링. codecademy라는 사이트에서 &lt;strong&gt;React&lt;/strong&gt;와 &lt;strong&gt;GraphQL&lt;/strong&gt;을 배웠다.&lt;/p&gt;
-
-&lt;p&gt;이 외에 &lt;strong&gt;Python&lt;/strong&gt;도 해봤고, &lt;strong&gt;Django&lt;/strong&gt;로 웹페이지도 만들어봤다. &lt;strong&gt;C++&lt;/strong&gt;로 알고리즘 문제도 풀어보았다. 세상에는 참 똑똑한 사람들이 많다. 인터넷 세상에는 뉴비들도 쉽게 따라할 수 있을 정도로 친절한 각종 Document와 Tutorial들이 넘쳐난다.&lt;/p&gt;
-
-&lt;h3 id=&quot;입대&quot;&gt;입대&lt;/h3&gt;
-
-&lt;p&gt;군대에 들어오니 생각이 많아진다. 내가 걸어왔던 길을 다시 되돌아보기도 하고, (아직 보이지는 않지만) 전역 후에 대한 고민을 하기도 한다. 지난 2년 동안의 대학생활을 돌아보고, 적지 않은 경험에 비해 남은 건 하나도 없다는 생각이 종종 들고는 한다. 지금 다시 JAVA로 계산기를 만들어보라고 하면, 뚝딱뚝딱 만들어낼 자신이 없다. 유튜브 영상, 강의만 보고도 충분히 그 문법과 구조들이 이해가 된다고 착각해서 잃어버린 개념들이 너무나도 많은 것같다.&lt;/p&gt;
-
-&lt;h3 id=&quot;계획&quot;&gt;계획&lt;/h3&gt;
-
-&lt;p&gt;나도 내가 도움을 받았던 글과 영상을 남긴 그들처럼 인터넷 세상에 글을 남겨보고자 한다. Git-hub과 관련하여 1일 1커밋이라는 말을 들어본 적은 있는데, TIL(Today I Learned)이라는 것은 처음 들어보았다. 1일 1커밋과 비슷한 형식으로, 그날 그날 내가 배운 것을 정리하고 흔적을 남기는 것을 말하는 것같다. 다시 처음부터 배운다는 느낌으로, 내가 배우고 공부한 것들에 대해 이 블로그에 한 줄 한 줄 흔적을 남겨보려 한다.&lt;/p&gt;
-
-&lt;p&gt;Jekyll에서 블로그를 운영할 계획이므로, markdown과 git-hub에 익숙해져야한다. 시간이 좀 걸릴 것같다. 홈페이지가 안정화되고, 안정적으로 블로그를 관리하기 위해서는 당분간은 로컬에서 블로그를 운영해야할 것같다.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;내일-공부할-내용&quot;&gt;내일 공부할 내용&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;포스트에 태그, 댓글 기능 추가&lt;/li&gt;
-  &lt;li&gt;markdown 공부 내용 기록&lt;/li&gt;
-  &lt;li&gt;markdown 테마 입히기&lt;/li&gt;
-  &lt;li&gt;생활코딩 GIT 공부&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="TIL" /><summary type="html">2020년 9월 24일</summary></entry><entry><title type="html">TIL_200923</title><link href="http://0.0.0.0:4000/til/2020/09/23/TIL.html" rel="alternate" type="text/html" title="TIL_200923" /><published>2020-09-23T00:00:00+00:00</published><updated>2020-09-23T00:00:00+00:00</updated><id>http://0.0.0.0:4000/til/2020/09/23/TIL</id><content type="html" xml:base="http://0.0.0.0:4000/til/2020/09/23/TIL.html">&lt;p&gt;매일 내가 배운 것들을 정리하고 흔적을 남기려 한다. Jekyll을 처음 사용해봐서 아직은 형편없는 블로그지만, 이것 저것 공부하며 내용을 채워나가면 훌륭한 블로그가 될 것이라고 생각한다.&lt;/p&gt;</content><author><name></name></author><category term="TIL" /><summary type="html">매일 내가 배운 것들을 정리하고 흔적을 남기려 한다. Jekyll을 처음 사용해봐서 아직은 형편없는 블로그지만, 이것 저것 공부하며 내용을 채워나가면 훌륭한 블로그가 될 것이라고 생각한다.</summary></entry></feed>
+  &lt;li&gt;They are wrapped with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;&lt;/code&gt; tag when they are rendered. If you want to highlight your code like code editor, you have to apply plugin such as ‘gem rouge’, ‘highlight.js’, etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;7-images&quot;&gt;7. Images&lt;/h3&gt;
+
+&lt;p&gt;I don’t have images yet. I will edit this part later.&lt;/p&gt;
+
+&lt;h3 id=&quot;8-horizontal-rules&quot;&gt;8. Horizontal Rules&lt;/h3&gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;***
+---
+--------------------
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr /&gt;
+&lt;hr /&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;9-urls-and-formatting-links&quot;&gt;9. URLs and Formatting Links&lt;/h3&gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;https://autumn-yongs.github.io/&amp;gt;
+[Autumn-yongs' blog](https://dreamgonfly.github.io/)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://autumn-yongs.github.io/&quot;&gt;https://autumn-yongs.github.io/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://autumn-yongs.github.io/&quot;&gt;Autumn-yongs’ blog&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;They are wrapped with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag when they are rendered. In this example, I already customized &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tags’ feature. Without customizing, there would be primitive &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tags with blue texts and underlines.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.markdownguide.org/basic-syntax/#code&quot;&gt;Basic Syntax by Markdown Guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gist.github.com/ihoneymon/652be052a0727ad59601&quot;&gt;[공통] 마크다운 markdown 작성법&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Jekyll" /><summary type="html">Preface On Jekyll blog, posts are written in markdown language.</summary></entry><entry><title type="html">TIL_200926</title><link href="http://0.0.0.0:4000/til/2020/09/26/TIL.html" rel="alternate" type="text/html" title="TIL_200926" /><published>2020-09-26T00:00:00+00:00</published><updated>2020-09-26T00:00:00+00:00</updated><id>http://0.0.0.0:4000/til/2020/09/26/TIL</id><content type="html" xml:base="http://0.0.0.0:4000/til/2020/09/26/TIL.html">&lt;h1 id=&quot;26-sep-2020&quot;&gt;26 Sep 2020&lt;/h1&gt;
+
+&lt;h2 id=&quot;today-i-learned&quot;&gt;Today I Learned&lt;/h2&gt;
+
+&lt;h3 id=&quot;jekyll-structure&quot;&gt;Jekyll structure&lt;/h3&gt;
+
+&lt;p&gt;I was extremely confused about Jekyll. I tried to build my blog by myself, but there were many problems. I wander around my Jekyll blog after I had completely followed the tutorial of official website. So, I read the documents yesterday, repeatedly and intensively. Finally, I could get close to Jekyll blog as I understood the skeleton of Jekyll system.&lt;/p&gt;
+
+&lt;h3 id=&quot;git&quot;&gt;Git&lt;/h3&gt;
+
+&lt;p&gt;I feel keenly the necessity of Git while I run my blog. Today I learned about Git’s branching system. However, as I’ve never experienced group project, some concepts of Git’s branch are confusing. I think I have to study more about that.&lt;/p&gt;
+
+&lt;h3 id=&quot;markdown&quot;&gt;Markdown&lt;/h3&gt;
+
+&lt;p&gt;I was confused about markdown template. I followed the guide, but the theme was so unattractive. My blog becomes fancy after I realized that I had to apply some plugins for text-highlighting. I installed ‘rouge’ in gem, and I applied that onto my blog. During the posting of &lt;a href=&quot;/jekyll/2020/09/26/Jekyll.html&quot;&gt;[Jekyll] How to use Markdown&lt;/a&gt;, I’ve completed a custom theme. ^_^&lt;/p&gt;
+
+&lt;h3 id=&quot;blog-decoration&quot;&gt;Blog decoration&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Added profile box on navigation bar.&lt;/li&gt;
+  &lt;li&gt;Applied syntax highlighting theme on posts.&lt;/li&gt;
+  &lt;li&gt;Decorated posts’ css style.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;diary&quot;&gt;Diary&lt;/h2&gt;
+
+&lt;h3 id=&quot;looing-back-over-my-life&quot;&gt;Looing back over my life&lt;/h3&gt;
+
+&lt;p&gt;chine, and server by myself, I felt keenly the necessity of logging my development study.&lt;/p&gt;
+
+&lt;h3 id=&quot;plan&quot;&gt;Plan&lt;/h3&gt;
+
+&lt;p&gt;be accustomed to markdown and github. It seems to take a while for me to get familiar.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;tomorrow-ill-learn&quot;&gt;Tomorrow I’ll learn&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Add comments system&lt;/li&gt;
+  &lt;li&gt;Post about Git and Github; Git and branch; Jekyll structure;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="TIL" /><summary type="html">26 Sep 2020</summary></entry><entry><title type="html">TIL_200924</title><link href="http://0.0.0.0:4000/til/2020/09/24/TIL.html" rel="alternate" type="text/html" title="TIL_200924" /><published>2020-09-24T00:00:00+00:00</published><updated>2020-09-24T00:00:00+00:00</updated><id>http://0.0.0.0:4000/til/2020/09/24/TIL</id><content type="html" xml:base="http://0.0.0.0:4000/til/2020/09/24/TIL.html">&lt;h1 id=&quot;24-sep-2020&quot;&gt;24 Sep 2020&lt;/h1&gt;
+
+&lt;h2 id=&quot;today-i-learned&quot;&gt;Today I Learned&lt;/h2&gt;
+
+&lt;h3 id=&quot;decorate-my-blog&quot;&gt;Decorate my blog&lt;/h3&gt;
+
+&lt;p&gt;With jekyll themes, I could make my blog fancy. But, I did’t like to do that. I wanted to make navigation bar by myself. I struggeld with Jekyll environment for about 6 hours…&lt;/p&gt;
+
+&lt;h3 id=&quot;markdown&quot;&gt;Markdown&lt;/h3&gt;
+
+&lt;p&gt;I have experience in running a NAVER blog about 10 years ago. There was a nice editor which makes posting very easy. I was beginning to start Jekyll blog, I wondered how to post. And markdown makes it possible. I studied about how to write articles with markdown template.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;diary&quot;&gt;Diary&lt;/h2&gt;
+
+&lt;h3 id=&quot;looing-back-over-my-life&quot;&gt;Looing back over my life&lt;/h3&gt;
+
+&lt;p&gt;I’ve been interested in programming for 2 years now and web development for 1 years. I’ve experienced &lt;strong&gt;C/JAVA/C++/HTML/CSS/JS/node.js/express.js/selenium/react/react-native/GraphQL/Python/Django&lt;/strong&gt; and so on…&lt;/p&gt;
+
+&lt;p&gt;There are many people who have sexy brain and they made abundant documents and tutorials which welcome newbies to programming world. Just following those allows people to make fancy web-page, crawling machine, and server.&lt;/p&gt;
+
+&lt;p&gt;However, I don’t think there’s anything left to me in comparison with experiences on many programming languages and tools. The explanation was super kind and made me catch the algorithm of operation. Maybe, more accurately, gave an illusion of catching. As I saw myself who was not able to make any web-site, crawling machine, and server by myself, I felt keenly the necessity of logging my development study.&lt;/p&gt;
+
+&lt;h3 id=&quot;plan&quot;&gt;Plan&lt;/h3&gt;
+
+&lt;p&gt;I am going to put on record in Internet like people who guided me to programming world. I’ve heard that &lt;strong&gt;Github Daily Commit&lt;/strong&gt;, but I’ve never heard about &lt;strong&gt;TIL&lt;/strong&gt; which means “Today I Learned”. Organizing my study and posting that on blog means TIL, and I decided to do that in English. I’ve never tried posting in English. It’s kind of a challenge to me.&lt;/p&gt;
+
+&lt;p&gt;The reason why I make my blog in English, while I am a Korean, is on account of my dream that I really want to work in San-Francisco. Warm sunshine and good atmosphere of Paloalto was so impressive and is absolutely unforgettable.&lt;/p&gt;
+
+&lt;p&gt;As I try to run my blog on Jekyll environment, I have to be accustomed to markdown and github. It seems to take a while for me to get familiar.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;tomorrow-ill-learn&quot;&gt;Tomorrow I’ll learn&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Add tag, comments features&lt;/li&gt;
+  &lt;li&gt;study about markdown&lt;/li&gt;
+  &lt;li&gt;Apply markdown theme&lt;/li&gt;
+  &lt;li&gt;Listen to Git lecture&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="TIL" /><summary type="html">24 Sep 2020</summary></entry><entry><title type="html">TIL_200923</title><link href="http://0.0.0.0:4000/til/2020/09/23/TIL.html" rel="alternate" type="text/html" title="TIL_200923" /><published>2020-09-23T00:00:00+00:00</published><updated>2020-09-23T00:00:00+00:00</updated><id>http://0.0.0.0:4000/til/2020/09/23/TIL</id><content type="html" xml:base="http://0.0.0.0:4000/til/2020/09/23/TIL.html">&lt;p&gt;I’m going to organize what I learned everyday and leave a trace of my study. My blog will become a splendid blog if I fill out the contents while I study this and that.&lt;/p&gt;</content><author><name></name></author><category term="TIL" /><summary type="html">I’m going to organize what I learned everyday and leave a trace of my study. My blog will become a splendid blog if I fill out the contents while I study this and that.</summary></entry></feed>

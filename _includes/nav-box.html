@@ -6,6 +6,24 @@
 	</div>
 	<div class="bg"></div>
 	<div class="content">
+		<div class="profile">
+			<div class="profile-img"></div>
+			<div class="introduction">
+				<p class="name">Autumn-yongs</p>
+				<p class="description">Student developer dreaming life in San Francisco</p>
+				<div class="contact">
+					<div class="gmail">
+						<img src='{{ "/assets/image/iconmonstr-gmail-1.svg"}}' alt="gmail">
+						<p>autumnyongs@gmail.com</p>
+					</div>
+					<div class="github">
+						<img src='{{ "/assets/image/iconmonstr-github-1.svg"}}' alt="github">
+						<p>autumn-yongs</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
 		<ul>
 			{% for item in site.data.menu %}
 				<li><a href="{{ item.link }}"

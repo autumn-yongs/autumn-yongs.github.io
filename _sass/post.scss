@@ -16,8 +16,10 @@
 	margin: 20px 0;
 }
 
-#post ul {
+#post ul,
+#post ol {
 	padding-left: 30px;
+	margin: 10px 0;
 }
 
 #post h1,
@@ -26,7 +28,7 @@
 #post h4,
 #post h5,
 #post h6 {
-	margin-top: 50px;
+	margin-top: 40px;
 	margin-bottom: 10px;
 }
 
@@ -34,6 +36,26 @@
 	margin: 10px 0;
 }
 
+#post a {
+	display: inline-block;
+	color: cornflowerblue;
+	padding: .2em .6em;
+	border-radius: .4em;
+	margin: 5px 0;
+	transition: .3s;
+}
+
+#post a:hover {
+	background-color: powderblue;
+}
+
 #post .blank {
 	height: 300px;
+}
+
+#post blockquote {
+	padding: 0 1em;
+	margin: 10px 0;
+	color: dimgray;
+	border-left: .25em solid cornflowerblue;
 }
