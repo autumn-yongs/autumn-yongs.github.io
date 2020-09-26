@@ -1,0 +1,44 @@
+I"o<h1 id="26-sep-2020">26 Sep 2020</h1>
+
+<h2 id="today-i-learned">Today I Learned</h2>
+
+<h3 id="jekyll-structure">Jekyll structure</h3>
+
+<p>I was extremely confused about Jekyll. I tried to build my blog by myself, but there were many problems. I wander around my Jekyll blog after I had completely followed the tutorial of official website. So, I read the documents yesterday, repeatedly and intensively. Finally, I could get close to Jekyll blog as I understood the skeleton of Jekyll system.</p>
+
+<h3 id="git">Git</h3>
+
+<p>I feel keenly the necessity of Git while I run my blog. Today I learned about Git’s branching system. However, as I’ve never experienced group project, some concepts of Git’s branch are confusing. I think I have to study more about that.</p>
+
+<h3 id="markdown">Markdown</h3>
+
+<p>I was confused about markdown template. I followed the guide, but the theme was so unattractive. My blog becomes fancy after I realized that I had to apply some plugins for text-highlighting. I installed ‘rouge’ in gem, and I applied that onto my blog. During the posting of <a href="/jekyll/2020/09/26/Jekyll.html">[Jekyll] How to use Markdown</a>, I’ve completed a custom theme. ^_^</p>
+
+<h3 id="blog-decoration">Blog decoration</h3>
+
+<ul>
+  <li>Added profile box on navigation bar.</li>
+  <li>Applied syntax highlighting theme on posts.</li>
+  <li>Decorated posts’ css style.</li>
+</ul>
+
+<hr />
+
+<h2 id="diary">Diary</h2>
+
+<h3 id="looing-back-over-my-life">Looing back over my life</h3>
+
+<p>chine, and server by myself, I felt keenly the necessity of logging my development study.</p>
+
+<h3 id="plan">Plan</h3>
+
+<p>be accustomed to markdown and github. It seems to take a while for me to get familiar.</p>
+
+<hr />
+
+<h2 id="tomorrow-ill-learn">Tomorrow I’ll learn</h2>
+<ul>
+  <li>Add comments system</li>
+  <li>Post about Git and Github; Git and branch; Jekyll structure;</li>
+</ul>
+:ET
