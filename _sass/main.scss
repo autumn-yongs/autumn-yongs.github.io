@@ -19,9 +19,9 @@ body {
 } 
 ::-webkit-scrollbar-thumb {
 	background-color: dimgray; 
-	border-radius:30px;
+	border-radius: 30px;
 } 
-::-webkit-scrollbar-button:start:decrement, 
-::-webkit-scrollbar-button:end:increment {
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-corner {
   	display: none;
 }

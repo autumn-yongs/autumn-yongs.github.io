@@ -1,0 +1,133 @@
+I"�<h2 id="preface">Preface</h2>
+<p>Whenever I was googling for information, codes highlighted as fancy editor attracted me. When I started my blog few days ago, however, there were nothing else than monotonous texts. I wanted to make my code sexier, and <strong>rouge</strong> made it possible.</p>
+
+<p>If you are planning to run a Jekyll blog, or already Jekyll user, using Rouge as syntax highlighter is highly recommended. Rouge as default highlighter in Jekyll 3 and above is specified in official Jekyll website.</p>
+
+<blockquote>
+  <h3 id="code-snippet-highlighting">Code snippet highlighting</h3>
+  <p>Jekyll has built in support for syntax highlighting of over 100 languages thanks to Rouge. Rouge is the default highlighter in Jekyll 3 and above.</p>
+
+  <p><a href="https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting">Official Jekyll Website</a></p>
+</blockquote>
+
+<h2 id="how-to-apply-rouge-on-your-website">How to apply Rouge on your website</h2>
+
+<h3 id="1-install-rouge">1. Install Rouge</h3>
+
+<ul>
+  <li>
+    <p>Let’s start with the assumption that your computer is alrealy equipped with <strong>Ruby</strong> and <strong>Gem</strong> environment.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">$ gem install rouge</code></p>
+    <ul>
+      <li>Install Rouge on your computer.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="2-select-style">2. Select Style</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">$ rougify help style</code>
+    <ul>
+      <li>View available themes in Rouge.</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>rougify version
+3.23.0
+<span class="nv">$ </span>rougify <span class="nb">help </span>style
+usage: rougify style <span class="o">[</span>&lt;theme-name&gt;] <span class="o">[</span>&lt;options&gt;]
+
+Print CSS styles <span class="k">for </span>the given theme.  Extra options are
+passed to the theme. To <span class="k">select </span>a mode <span class="o">(</span>light/dark<span class="o">)</span> <span class="k">for </span>the
+theme, append <span class="s1">'.light'</span> or <span class="s1">'.dark'</span> to the &lt;theme-name&gt;
+respectively. Theme defaults to thankful_eyes.
+
+options:
+  <span class="nt">--scope</span>       <span class="o">(</span>default: .highlight<span class="o">)</span> a css selector to scope by
+  <span class="nt">--tex</span>         <span class="o">(</span>default: <span class="nb">false</span><span class="o">)</span> render as TeX
+  <span class="nt">--tex-prefix</span>  <span class="o">(</span>default: RG<span class="o">)</span> a <span class="nb">command </span>prefix <span class="k">for </span>TeX
+                implies <span class="nt">--tex</span> <span class="k">if </span>specified
+
+available themes:
+  base16, base16.dark, base16.light, base16.monokai, base16.monokai.dark, base16.monokai.light, base16.sol
+arized, base16.solarized.dark, base16.solarized.light, bw, colorful, github, gruvbox, gruvbox.dark, gruvbo
+x.light, igorpro, magritte, molokai, monokai, monokai.sublime, pastie, thankful_eyes, tulip
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>My Rouge version is 3.23.0, and there are many available themes as you can see in the last part.</p>
+  </li>
+  <li>
+    <p>In my case, I chose <code class="language-plaintext highlighter-rouge">monokai.sublime</code> as syntax highlighter.</p>
+  </li>
+  <li>
+    <p>You can preview those themes with sample code: <a href="https://spsarolkar.github.io/rouge-theme-preview/">Here!</a></p>
+  </li>
+</ul>
+
+<h3 id="3-download-theme">3. Download Theme</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">$ rougify style [theme] &gt; [path]</code>
+    <ul>
+      <li>In order to download directly in my Jekyll blog’s assets directory, I commanded like this:
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">$ rougify style monokai.sublime &gt; assets/css/syntax-highlighter.css</code></li>
+        </ul>
+      </li>
+      <li>You can name css file in your own way.
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">assets/css/highlighter.css</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="4-link-stylesheet-with-html">4. Link Stylesheet with HTML</h3>
+
+<ul>
+  <li>
+    <p>I didn’t have to worry about linking as there was a css link system in my Jekyll blog.</p>
+  </li>
+  <li>
+    <p>But if you want to apply stylesheet, which you just downloaded, on your website, you have to link it in appropriate way for your site.</p>
+    <ul>
+      <li>For example, add <code class="language-plaintext highlighter-rouge">&lt;link rel="stylesheet" href="[path]"&gt;</code> in your HTML file.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="5-customize-syntax-highlighter">5. Customize Syntax Highlighter</h3>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.highlighter-rouge</span> <span class="p">{</span>
+	<span class="nl">margin</span><span class="p">:</span> <span class="m">10px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.highlight</span> <span class="p">{</span>
+	<span class="nl">border-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+	<span class="nl">overflow-x</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.highlight</span> <span class="nt">code</span> <span class="p">{</span>
+	<span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Source Code Pro'</span><span class="p">,</span> <span class="nb">monospace</span><span class="p">;</span>
+	<span class="nl">font-size</span><span class="p">:</span> <span class="n">small</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>If you are good at CSS, you can customize figures of highlighter by adding some css codes.</li>
+</ul>
+
+<h2 id="reference">Reference</h2>
+
+<ul>
+  <li><a href="https://rubygems.org/gems/rouge">Ruby Gem ‘rouge’</a></li>
+  <li><a href="http://rouge.jneen.net/v3.23.0/markdown/">Test your code on Rouge theme</a></li>
+  <li><a href="https://github.com/rouge-ruby/rouge">Rouge Github</a></li>
+</ul>
+
+:ET

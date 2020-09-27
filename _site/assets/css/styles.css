@@ -8,7 +8,7 @@ body { background-color: linen; }
 
 ::-webkit-scrollbar-thumb { background-color: dimgray; border-radius: 30px; }
 
-::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment { display: none; }
+::-webkit-scrollbar-button, ::-webkit-scrollbar-corner { display: none; }
 
 header { display: flex; position: fixed; top: 0; left: 0; width: 100%; height: 60px; box-shadow: 0 1px 5px gray; background-color: white; color: black; padding-left: 40px; align-items: center; z-index: 5; }
 
@@ -98,13 +98,15 @@ header { display: flex; position: fixed; top: 0; left: 0; width: 100%; height: 6
 
 #post blockquote { padding: 0 1em; margin: 10px 0; color: dimgray; border-left: .25em solid cornflowerblue; }
 
+.highlighter-rouge { margin: 10px 0; }
+
 .highlight { border-radius: 10px; overflow-x: auto; }
 
 .highlight code { font-family: 'Source Code Pro', monospace; font-size: small; }
 
-.highlight pre { padding: 15px; }
-
 .language-plaintext { background-color: lightgray; padding: .2em .4em; border-radius: .4em; font-family: 'Source Code Pro', monospace; color: #F053A8; }
+
+.language-emphasis { font-family: 'Noto Sans KR', sans-serif; color: crimson; white-space: normal; }
 
 .language-text code { color: lightgray; }
 

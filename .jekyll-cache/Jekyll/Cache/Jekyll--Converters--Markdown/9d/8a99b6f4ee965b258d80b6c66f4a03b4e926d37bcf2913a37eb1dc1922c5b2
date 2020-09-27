@@ -1,0 +1,108 @@
+I"�<h2 id="preface">Preface</h2>
+
+<p>As a new-comer to the blog world who is trying to customize blog by himself, built-in scrollbar provided by browser must be changed.</p>
+
+<blockquote>
+  <p>This function is only compatible with webkit browser: Chrome, Opera, Safari…
+If you want to know availability of this function by browser, check ‘Browser Compatibility’ in this document.
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar">MDN docs: -webkit-scrollbar</a></p>
+</blockquote>
+
+<h2 id="lets-move-on">Let’s move on!</h2>
+
+<h3 id="1-css-selectors">1. CSS Selectors</h3>
+
+<blockquote>
+  <p>You don’t have to feel stress from memorizing all of this selectors. It’s okay to skip this track and get back on later.</p>
+</blockquote>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">::-webkit-scrollbar</code>: the entire scrollbar</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">::-webkit-scrollbar-button</code>: the buttons on the scrollbar (arrows pointing upwards and downwards).</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">::-webkit-scrollbar-thumb</code>: the draggable scrolling handle.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">::-webkit-scrollbar-track</code>: the track (progress bar) of the scrollbar.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">::-webkit-scrollbar-track-piece</code>: the part of the track (progress bar) not covered by the handle.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">::-webkit-scrollbar-corner</code>: the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">::-webkit-resizer</code>: the draggable resizing handle that appears at the bottom corner of some elements.</p>
+  </li>
+</ul>
+
+<h3 id="2-my-code-block-as-an-example">2. My code block as an example</h3>
+
+<p><img src="/assets/image/2020-09-27-HTML_CSS_JS.png" alt="scrollbar_example" width="100%" max-width="700px" /></p>
+
+<ul>
+  <li>Scrollbar part of my stylesheets
+    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">::-webkit-scrollbar</span> <span class="p">{</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span> <span class="err">//</span> <span class="err">horizontal</span> <span class="err">scrollbar's</span> <span class="err">height</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span> <span class="err">//</span> <span class="err">vertical</span> <span class="err">scrollbar's</span> <span class="err">width</span>
+<span class="p">}</span> 
+<span class="nd">::-webkit-scrollbar-track</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+<span class="p">}</span> 
+<span class="nd">::-webkit-scrollbar-thumb</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">dimgray</span><span class="p">;</span> 
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span> <span class="err">//</span> <span class="err">I</span> <span class="err">made</span> <span class="err">scrollbar</span> <span class="err">round</span> 
+<span class="p">}</span> 
+<span class="nd">::-webkit-scrollbar-button</span><span class="o">,</span>
+<span class="nd">::-webkit-scrollbar-corner</span> <span class="p">{</span>
+	<span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Can you figure out what element is applied where?</li>
+</ul>
+
+<h3 id="3-download-theme">3. Download Theme</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">$ rougify style [theme] &gt; [path]</code>
+    <ul>
+      <li>In order to download directly in my Jekyll blog’s assets directory, I commanded like this:
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">$ rougify style monokai.sublime &gt; assets/css/syntax-highlighter.css</code></li>
+        </ul>
+      </li>
+      <li>You can name css file in your own way.
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">assets/css/highlighter.css</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="4-link-stylesheet-with-html">4. Link Stylesheet with HTML</h3>
+
+<ul>
+  <li>
+    <p>I didn’t have to worry about linking as there was a css link system in my Jekyll blog.</p>
+  </li>
+  <li>
+    <p>But if you want to apply stylesheet, which you just downloaded, on your website, you have to link it in appropriate way for your site.</p>
+    <ul>
+      <li>For example, add <code class="language-plaintext highlighter-rouge">&lt;link rel="stylesheet" href="[path]"&gt;</code> in your HTML file.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="reference">Reference</h2>
+
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar">MDN document: -webkit-scrollbar</a></li>
+</ul>
+
+:ET

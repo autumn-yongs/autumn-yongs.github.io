@@ -1,0 +1,69 @@
+---
+title: "[Jekyll] Colorize text using Markdown"
+categories: [ Jekyll ]
+---
+
+## Preface
+There's only **Bold** or *Italic* to emphasize text. Of course there's ***Bold and Italic***. I don't want to highlight text with some containers like blockquote. I wondered what can I do. And there was
+
+```emphasis
+"CODE BLOCK"
+```
+
+## How to colorize text
+
+### Primitive HTML code inside Markdown document
+
+```text
+<p style="color: red">I want to <em>emphasize</em> <strong>this text!</strong></p>
+I want to emphasize <span style="color: red">this text</span>!
+```
+
+***
+
+<p style="color: crimson">I want to <em>emphasize</em> <strong>this text!</strong></p>
+I want to emphasize <span style="color: crimson">this text</span>!
+
+***
+
+* Primitive HTML tag is allowed when you use markdown template. This is the simplest way to decorate sentences, perhaps.
+
+### Customize Code Block Theme
+
+~~~text
+```emphasis
+I want to emphasize this text!
+```
+~~~
+
+***
+
+```emphasis
+I want to emphasize this text!
+```
+
+***
+
+* By markdown syntax, text next to triple backticks becomes language type of inner contents. Try to parse HTML code. There would be `language-emphasis` class in `<code>` tag.
+
+* Apply css style to make your customized language 'emphasis' fancy.  
+```css
+.language-emphasis {
+	font-family: 'Noto Sans KR', sans-serif;
+	color: crimson;
+	white-space: normal;
+}
+```
+
+* If you use syntax highlighter such as Rouge, customized language name should not be on the list which is supported by that syntax highlighter.
+
+* And you have to add some attributes to be handled as exception.
+  - For example, `white-space: normal;`
+
+## I think that...
+
+* Using primitive HTML code is much more flexible and applicable to any case.
+
+* But you can customize your own theme with code block. Whenever you want to emphasize sentence, you don't have to mess up your article with HTML tags. It is an obvious fact that Code block syntax is tidier than HTML tags.
+
+

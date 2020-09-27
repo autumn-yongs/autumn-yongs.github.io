@@ -1,0 +1,60 @@
+I"�
+<h2 id="preface">Preface</h2>
+<p>There’s only <strong>Bold</strong> or <em>Italic</em> to emphasize text. Of course there’s <strong><em>Bold and Italic</em></strong>. I don’t want to highlight text with some containers like blockquote. I wondered what can I do. And there was</p>
+
+<pre><code class="language-emphasis">"CODE BLOCK"
+</code></pre>
+
+<h2 id="how-to-colorize-text">How to colorize text</h2>
+
+<h3 id="primitive-html-code-inside-markdown-document">Primitive HTML code inside Markdown document</h3>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p style="color: red"&gt;I want to &lt;em&gt;emphasize&lt;/em&gt; &lt;strong&gt;this text!&lt;/strong&gt;&lt;/p&gt;
+I want to emphasize &lt;span style="color: red"&gt;this text&lt;/span&gt;!
+</code></pre></div></div>
+
+<hr />
+
+<p style="color: crimson">I want to <em>emphasize</em> <strong>this text!</strong></p>
+<p>I want to emphasize <span style="color: crimson">this text</span>!</p>
+
+<hr />
+
+<ul>
+  <li>Primitive HTML tag is allowed when you use markdown template. This is the simplest way to decorate sentences, perhaps.</li>
+</ul>
+
+<h3 id="customize-code-block-theme">Customize Code Block Theme</h3>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```emphasis
+I want to emphasize this text!
+```
+</code></pre></div></div>
+
+<hr />
+
+<pre><code class="language-emphasis">I want to emphasize this text!
+</code></pre>
+
+<hr />
+
+<ul>
+  <li>
+    <p>By markdown syntax, text next to triple backticks becomes language type of inner contents. Try to parse HTML code. There would be <code class="language-plaintext highlighter-rouge">language-emphasis</code> class in <code class="language-plaintext highlighter-rouge">&lt;code&gt;</code> tag.</p>
+  </li>
+  <li>Apply css style to make your customized language ‘emphasis’ fancy.
+    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.language-emphasis</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Noto Sans KR'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">crimson</span><span class="p">;</span>
+  <span class="nl">white-space</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>If you use syntax highlighter such as Rouge, customized language name should not be on the list which is supported by that syntax highlighter.</li>
+</ul>
+
+<h3 id="2-select-style">2. Select Style</h3>
+
+<h2 id="reference">Reference</h2>
+
+:ET

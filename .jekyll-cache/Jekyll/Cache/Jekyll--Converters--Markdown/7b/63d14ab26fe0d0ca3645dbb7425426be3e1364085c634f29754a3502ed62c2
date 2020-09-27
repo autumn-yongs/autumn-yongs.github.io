@@ -1,0 +1,190 @@
+I".<h2 id="preface">Preface</h2>
+<p>On Jekyll blog, posts are written in markdown language.</p>
+
+<h2 id="how-to-write-markdown">How to write markdown</h2>
+
+<h3 id="1-heading">1. Heading</h3>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code># This is Header 1
+## This is Header 2
+### This is Header 3
+#### This is Header 4
+##### This is Header 5
+###### This is Header 6
+</code></pre></div></div>
+<hr />
+
+<h2 id="this-is-header-2">This is Header 2</h2>
+
+<hr />
+<ul>
+  <li>They are wrapped with <code class="language-plaintext highlighter-rouge">&lt;h?&gt;</code> tag when they are rendered.</li>
+</ul>
+
+<h3 id="2-paragraph">2. Paragraph</h3>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is first line.
+This is second line.  
+This is third line.
+</code></pre></div></div>
+<hr />
+
+<p>This is first line.
+This is second line.<br />
+This is third line.</p>
+
+<hr />
+<ul>
+  <li>They are wrapped with <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> tag when they are rendered.</li>
+  <li>If you want to make line break in paragraph, type two spaces and return. Or there would be a connected line.</li>
+  <li>If you want to write other paragraph, type return twice. And that paragraph will be wrapped with new <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> tag.</li>
+</ul>
+
+<h3 id="3-emphasis">3. Emphasis</h3>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is *italic text*.  
+This is _italic text_.  
+This is **bold text**.  
+This is __bold text__.  
+This is ***bold and italic text***.  
+This is ___bold and italic text___.
+</code></pre></div></div>
+<hr />
+
+<p>This is <em>italic text</em>.<br />
+This is <em>italic text</em>.<br />
+This is <strong>bold text</strong>.<br />
+This is <strong>bold text</strong>.<br />
+This is <strong><em>bold and italic text</em></strong>.<br />
+This is <strong><em>bold and italic text</em></strong>.</p>
+
+<hr />
+<ul>
+  <li>They are wrapped with <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code> tag or <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code> tag when they are rendered.</li>
+</ul>
+
+<h3 id="4-blockquote">4. Blockquote</h3>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; First Blockquote
+&gt;&gt; Second Blockquote
+</code></pre></div></div>
+<hr />
+
+<blockquote>
+  <p>First Blockquote</p>
+  <blockquote>
+    <p>Second Blockquote</p>
+  </blockquote>
+</blockquote>
+
+<hr />
+<ul>
+  <li>They are wrapped with <code class="language-plaintext highlighter-rouge">&lt;blockquote&gt;</code> tag when they are rendered.</li>
+</ul>
+
+<h3 id="5-list">5. List</h3>
+<h3 id="5_1-ordered-list">5_1. Ordered List</h3>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. First
+2. Second
+3. Third
+</code></pre></div></div>
+<hr />
+
+<ol>
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ol>
+
+<hr />
+<ul>
+  <li>They are wrapped with <code class="language-plaintext highlighter-rouge">&lt;ol&gt;</code> tag when they are rendered.</li>
+</ul>
+
+<h3 id="5_2-undordered-list">5_2. Undordered List</h3>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Case A
+  * Case A_1
+    + Case A_1_a
+  - Case A_2
+    + Case A_2_a
+      * Case A_2_a_i
++ Case B
+</code></pre></div></div>
+<hr />
+
+<ul>
+  <li>Case A
+    <ul>
+      <li>Case A_1
+        <ul>
+          <li>Case A_1_a</li>
+        </ul>
+      </li>
+      <li>Case A_2
+        <ul>
+          <li>Case A_2_a
+            <ul>
+              <li>Case A_2_a_i</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Case B</li>
+</ul>
+
+<hr />
+<ul>
+  <li>They are wrapped with <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code> tag when they are rendered.</li>
+</ul>
+
+<h3 id="6-code-blocks">6. Code Blocks</h3>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```javascript
+function printHello(){
+	console.log("Hello");
+}
+```
+</code></pre></div></div>
+<hr />
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">printHello</span><span class="p">(){</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Hello</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+<ul>
+  <li>They are wrapped with <code class="language-plaintext highlighter-rouge">&lt;pre&gt;&lt;code&gt;</code> tag when they are rendered. If you want to highlight your code like code editor, you have to apply plugin such as ‘gem rouge’, ‘highlight.js’, etc.</li>
+</ul>
+
+<h3 id="7-images">7. Images</h3>
+
+<p><img src="/assets/image/bike-riding.png" alt="bike-riding" width="30%" /></p>
+
+<h3 id="8-horizontal-rules">8. Horizontal Rules</h3>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>***
+---
+--------------------
+</code></pre></div></div>
+<hr />
+<hr />
+<hr />
+
+<h3 id="9-urls-and-formatting-links">9. URLs and Formatting Links</h3>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;https://autumn-yongs.github.io/&gt;
+[Autumn-yongs' blog](https://dreamgonfly.github.io/)
+</code></pre></div></div>
+<hr />
+
+<p><a href="https://autumn-yongs.github.io/">https://autumn-yongs.github.io/</a><br />
+<a href="https://autumn-yongs.github.io/">Autumn-yongs’ blog</a></p>
+
+<hr />
+<ul>
+  <li>They are wrapped with <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> tag when they are rendered. In this example, I already customized <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> tags’ feature. Without customizing, there would be primitive <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> tags with blue texts and underlines.</li>
+</ul>
+
+<h2 id="reference">Reference</h2>
+<ul>
+  <li><a href="https://www.markdownguide.org/basic-syntax/#code">Basic Syntax by Markdown Guide</a></li>
+  <li><a href="https://gist.github.com/ihoneymon/652be052a0727ad59601">[공통] 마크다운 markdown 작성법</a></li>
+</ul>
+
+:ET

@@ -1,4 +1,396 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-09-26T11:14:06+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><entry><title type="html">[GIT] Opentutorials_1: How to use Git on local</title><link href="http://0.0.0.0:4000/git/2020/09/26/GIT.html" rel="alternate" type="text/html" title="[GIT] Opentutorials_1: How to use Git on local" /><published>2020-09-26T00:00:00+00:00</published><updated>2020-09-26T00:00:00+00:00</updated><id>http://0.0.0.0:4000/git/2020/09/26/GIT</id><content type="html" xml:base="http://0.0.0.0:4000/git/2020/09/26/GIT.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-09-27T11:33:27+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><entry><title type="html">[CSS] Customize scrollbar on your web browser</title><link href="http://0.0.0.0:4000/html/css/js/2020/09/27/HTML_CSS_JS.html" rel="alternate" type="text/html" title="[CSS] Customize scrollbar on your web browser" /><published>2020-09-27T00:00:00+00:00</published><updated>2020-09-27T00:00:00+00:00</updated><id>http://0.0.0.0:4000/html/css/js/2020/09/27/HTML_CSS_JS</id><content type="html" xml:base="http://0.0.0.0:4000/html/css/js/2020/09/27/HTML_CSS_JS.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+
+&lt;p&gt;As a new-comer to the blog world who is trying to customize blog by himself, built-in scrollbar provided by browser must be changed.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This function is only compatible with webkit(or Blink) browser: Chrome, Opera, Safari…&lt;br /&gt;
+If you want to know availability of this function by browser, check ‘Browser Compatibility’ in this document.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar&quot;&gt;MDN document: -webkit-scrollbar&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;lets-move-on&quot;&gt;Let’s move on!&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-css-selectors&quot;&gt;1. CSS Selectors&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;You don’t have to feel stress from memorizing all of this selectors. It’s okay to skip this track and read next part first. And then get back on here later.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;::-webkit-scrollbar&lt;/code&gt;: the entire scrollbar&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;::-webkit-scrollbar-button&lt;/code&gt;: the buttons on the scrollbar (arrows pointing upwards and downwards).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;::-webkit-scrollbar-thumb&lt;/code&gt;: the draggable scrolling handle.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;::-webkit-scrollbar-track&lt;/code&gt;: the track (progress bar) of the scrollbar.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;::-webkit-scrollbar-track-piece&lt;/code&gt;: the part of the track (progress bar) not covered by the handle.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;::-webkit-scrollbar-corner&lt;/code&gt;: the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;::-webkit-resizer&lt;/code&gt;: the draggable resizing handle that appears at the bottom corner of some elements.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-my-code-block-as-an-example&quot;&gt;2. My code block as an example&lt;/h3&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Scrollbar part of my stylesheets
+    &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;::-webkit-scrollbar&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;8px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;horizontal&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;scrollbar's&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;height&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;vertical&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;scrollbar's&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;width&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+&lt;span class=&quot;nd&quot;&gt;::-webkit-scrollbar-track&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;white&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+&lt;span class=&quot;nd&quot;&gt;::-webkit-scrollbar-thumb&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;dimgray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+  &lt;span class=&quot;nl&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;made&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;scrollbar&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;round&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+&lt;span class=&quot;nd&quot;&gt;::-webkit-scrollbar-button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;::-webkit-scrollbar-corner&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Can you figure out what element is applied where? I’m not sure about my blog’s future style, but I hope that you could understand each selector’s role.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-how-to-make-scrollbar-appear&quot;&gt;3. How to make scrollbar appear?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If there’s no scrollbar but you want, or vice versa, I recommend you to read this document. It explains css style related to availability of scrollbar.&lt;br /&gt;
+&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/CSS/overflow&quot;&gt;MDN document: overflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar&quot;&gt;MDN document: -webkit-scrollbar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="HTML/CSS/JS" /><summary type="html">Preface</summary></entry><entry><title type="html">[Jekyll] Syntax highlighting with Rouge</title><link href="http://0.0.0.0:4000/jekyll/2020/09/27/Jekyll.html" rel="alternate" type="text/html" title="[Jekyll] Syntax highlighting with Rouge" /><published>2020-09-27T00:00:00+00:00</published><updated>2020-09-27T00:00:00+00:00</updated><id>http://0.0.0.0:4000/jekyll/2020/09/27/Jekyll</id><content type="html" xml:base="http://0.0.0.0:4000/jekyll/2020/09/27/Jekyll.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+&lt;p&gt;Whenever I was googling for information, codes highlighted as fancy editor attracted me. When I started my blog few days ago, however, there were nothing else than monotonous texts. I wanted to make my code sexier, and &lt;strong&gt;rouge&lt;/strong&gt; made it possible.&lt;/p&gt;
+
+&lt;p&gt;If you are planning to run a Jekyll blog, or already Jekyll user, using Rouge as syntax highlighter is highly recommended. Rouge as default highlighter in Jekyll 3 and above is specified in official Jekyll website.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;code-snippet-highlighting&quot;&gt;Code snippet highlighting&lt;/h3&gt;
+  &lt;p&gt;Jekyll has built in support for syntax highlighting of over 100 languages thanks to Rouge. Rouge is the default highlighter in Jekyll 3 and above.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting&quot;&gt;Official Jekyll Website&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;how-to-apply-rouge-on-your-website&quot;&gt;How to apply Rouge on your website&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-install-rouge&quot;&gt;1. Install Rouge&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Let’s start with the assumption that your computer is alrealy equipped with &lt;strong&gt;Ruby&lt;/strong&gt; and &lt;strong&gt;Gem&lt;/strong&gt; environment.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ gem install rouge&lt;/code&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Install Rouge on your computer.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-select-style&quot;&gt;2. Select Style&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ rougify help style&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;View available themes in Rouge.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rougify version
+3.23.0
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rougify &lt;span class=&quot;nb&quot;&gt;help &lt;/span&gt;style
+usage: rougify style &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;theme-name&amp;gt;] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;options&amp;gt;]
+
+Print CSS styles &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;the given theme.  Extra options are
+passed to the theme. To &lt;span class=&quot;k&quot;&gt;select &lt;/span&gt;a mode &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;light/dark&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;the
+theme, append &lt;span class=&quot;s1&quot;&gt;'.light'&lt;/span&gt; or &lt;span class=&quot;s1&quot;&gt;'.dark'&lt;/span&gt; to the &amp;lt;theme-name&amp;gt;
+respectively. Theme defaults to thankful_eyes.
+
+options:
+  &lt;span class=&quot;nt&quot;&gt;--scope&lt;/span&gt;       &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;default: .highlight&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; a css selector to scope by
+  &lt;span class=&quot;nt&quot;&gt;--tex&lt;/span&gt;         &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;default: &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; render as TeX
+  &lt;span class=&quot;nt&quot;&gt;--tex-prefix&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;default: RG&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; a &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;prefix &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;TeX
+                implies &lt;span class=&quot;nt&quot;&gt;--tex&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;specified
+
+available themes:
+  base16, base16.dark, base16.light, base16.monokai, base16.monokai.dark, base16.monokai.light, base16.sol
+arized, base16.solarized.dark, base16.solarized.light, bw, colorful, github, gruvbox, gruvbox.dark, gruvbo
+x.light, igorpro, magritte, molokai, monokai, monokai.sublime, pastie, thankful_eyes, tulip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;My Rouge version is 3.23.0, and there are many available themes as you can see in the last part.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In my case, I chose &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;monokai.sublime&lt;/code&gt; as syntax highlighter.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You can preview those themes with sample code: &lt;a href=&quot;https://spsarolkar.github.io/rouge-theme-preview/&quot;&gt;Here!&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-download-theme&quot;&gt;3. Download Theme&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ rougify style [theme] &amp;gt; [path]&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;In order to download directly in my Jekyll blog’s assets directory, I commanded like this:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ rougify style monokai.sublime &amp;gt; assets/css/syntax-highlighter.css&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;You can name css file in your own way.
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;assets/css/highlighter.css&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;4-link-stylesheet-with-html&quot;&gt;4. Link Stylesheet with HTML&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;I didn’t have to worry about linking as there was a css link system in my Jekyll blog.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;But if you want to apply stylesheet, which you just downloaded, on your website, you have to link it in appropriate way for your site.&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;For example, add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;[path]&quot;&amp;gt;&lt;/code&gt; in your HTML file.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-to-use&quot;&gt;How to use&lt;/h2&gt;
+
+&lt;h3 id=&quot;markdown&quot;&gt;Markdown&lt;/h3&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```css
+.container {
+	display: block;
+	width: 100%;
+	background-color: cornflowerblue;
+}
+```
+```javascript
+export function (pieces) {
+	const price = 10;
+	let total = price * pieces;
+	console.log(&quot;Total price is: &quot; + total);
+	return total;
+}
+```
+```bash
+$ rougify version
+3.23.0
+$ rougify help style
+...
+```
+```text
+Hello World!
+This is just a text.
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;cornflowerblue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pieces&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;total&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pieces&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Total price is: &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;total&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;total&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rougify version
+3.23.0
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rougify &lt;span class=&quot;nb&quot;&gt;help &lt;/span&gt;style
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Hello World!
+This is just a text.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Jekyll supports converting markdown to HTML code. It is way-way easy to apply with markdown template.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you don’t know about markdown grammar, I recommend you to google. If you don’t mind, there’s also my post! ^_^&lt;br /&gt;
+&lt;a href=&quot;/jekyll/2020/09/26/Jekyll.html&quot;&gt;[Jekyll] How to use Markdown&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;customizing&quot;&gt;Customizing&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-customize-syntax-highlighter&quot;&gt;1. Customize Syntax Highlighter&lt;/h3&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.highlighter-rouge&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.highlight&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;overflow-x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.highlight&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'Source Code Pro'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;monospace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;small&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you are good at CSS, you can customize figures of highlighter by adding some css codes. It’s time to make your code block attractive!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Parse rendered HTML codes refreshing your website and figuring out what features are applied. Then you could find what elements should be fixed.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Without trying to customize manually, You might not understand my upper sample customized code.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-add-your-own-code-type&quot;&gt;2. Add your own code type&lt;/h3&gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```emphasis
+I can customize theme.
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emphasis&quot;&gt;I can customize theme.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Try to parse the HTML rendered by markdown converter. It classifies language type from text next to triple backticks.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The language ‘emphasis’ is not supported by Rouge. So, I customized it as my theme.&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;In css file, I added this:
+        &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.language-emphasis&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'Noto Sans KR'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;crimson&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;white-space&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://rubygems.org/gems/rouge&quot;&gt;Ruby Gem ‘rouge’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rouge.jneen.net/v3.23.0/markdown/&quot;&gt;Test your code on Rouge theme&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rouge-ruby/rouge&quot;&gt;Rouge Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Jekyll" /><summary type="html">Preface Whenever I was googling for information, codes highlighted as fancy editor attracted me. When I started my blog few days ago, however, there were nothing else than monotonous texts. I wanted to make my code sexier, and rouge made it possible.</summary></entry><entry><title type="html">[Jekyll] Colorize text using Markdown</title><link href="http://0.0.0.0:4000/jekyll/2020/09/27/Jekyll_copy0.html" rel="alternate" type="text/html" title="[Jekyll] Colorize text using Markdown" /><published>2020-09-27T00:00:00+00:00</published><updated>2020-09-27T00:00:00+00:00</updated><id>http://0.0.0.0:4000/jekyll/2020/09/27/Jekyll_copy0</id><content type="html" xml:base="http://0.0.0.0:4000/jekyll/2020/09/27/Jekyll_copy0.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+&lt;p&gt;There’s only &lt;strong&gt;Bold&lt;/strong&gt; or &lt;em&gt;Italic&lt;/em&gt; to emphasize text. Of course there’s &lt;strong&gt;&lt;em&gt;Bold and Italic&lt;/em&gt;&lt;/strong&gt;. I don’t want to highlight text with some containers like blockquote. I wondered what can I do. And there was&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emphasis&quot;&gt;&quot;CODE BLOCK&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;how-to-colorize-text&quot;&gt;How to colorize text&lt;/h2&gt;
+
+&lt;h3 id=&quot;primitive-html-code-inside-markdown-document&quot;&gt;Primitive HTML code inside Markdown document&lt;/h3&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;p style=&quot;color: red&quot;&amp;gt;I want to &amp;lt;em&amp;gt;emphasize&amp;lt;/em&amp;gt; &amp;lt;strong&amp;gt;this text!&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+I want to emphasize &amp;lt;span style=&quot;color: red&quot;&amp;gt;this text&amp;lt;/span&amp;gt;!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p style=&quot;color: crimson&quot;&gt;I want to &lt;em&gt;emphasize&lt;/em&gt; &lt;strong&gt;this text!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I want to emphasize &lt;span style=&quot;color: crimson&quot;&gt;this text&lt;/span&gt;!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Primitive HTML tag is allowed when you use markdown template. This is the simplest way to decorate sentences, perhaps.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;customize-code-block-theme&quot;&gt;Customize Code Block Theme&lt;/h3&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```emphasis
+I want to emphasize this text!
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-emphasis&quot;&gt;I want to emphasize this text!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;By markdown syntax, text next to triple backticks becomes language type of inner contents. Try to parse HTML code. There would be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;language-emphasis&lt;/code&gt; class in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;code&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Apply css style to make your customized language ‘emphasis’ fancy.
+    &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.language-emphasis&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'Noto Sans KR'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;crimson&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;white-space&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you use syntax highlighter such as Rouge, customized language name should not be on the list which is supported by that syntax highlighter.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;And you have to add some attributes to be handled as exception.
+    &lt;ul&gt;
+      &lt;li&gt;For example, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;white-space: normal;&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;i-think-that&quot;&gt;I think that…&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Using primitive HTML code is much more flexible and applicable to any case.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;But you can customize your own theme with code block. Whenever you want to emphasize sentence, you don’t have to mess up your article with HTML tags. It is an obvious fact that Code block syntax is tidier than HTML tags.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Jekyll" /><summary type="html">Preface There’s only Bold or Italic to emphasize text. Of course there’s Bold and Italic. I don’t want to highlight text with some containers like blockquote. I wondered what can I do. And there was</summary></entry><entry><title type="html">[GIT] Opentutorials_1: How to use Git on local</title><link href="http://0.0.0.0:4000/git/2020/09/26/GIT.html" rel="alternate" type="text/html" title="[GIT] Opentutorials_1: How to use Git on local" /><published>2020-09-26T00:00:00+00:00</published><updated>2020-09-26T00:00:00+00:00</updated><id>http://0.0.0.0:4000/git/2020/09/26/GIT</id><content type="html" xml:base="http://0.0.0.0:4000/git/2020/09/26/GIT.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
 
 &lt;p&gt;This article is a part of Egoing’s youtube lecture &lt;strong&gt;지옥에서 온 Git (Git from the hell)&lt;/strong&gt;. Contents might not be exactly same with the sequence of lectures as I reorganized that in my way.&lt;/p&gt;
 
@@ -81,12 +473,6 @@
       &lt;li&gt;Skipping the staging area. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-a&lt;/code&gt; means ‘add’ and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-m&lt;/code&gt; means ‘message’.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;interact-with-remote-repository&quot;&gt;Interact with remote repository&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git push -u remote origin&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
@@ -251,8 +637,13 @@ function printHello(){
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;7-images&quot;&gt;7. Images&lt;/h3&gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![bike-riding](/assets/image/bike-riding.png){: width=&quot;50%&quot;}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;I don’t have images yet. I will edit this part later.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/image/bike-riding.png&quot; alt=&quot;bike-riding&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h3 id=&quot;8-horizontal-rules&quot;&gt;8. Horizontal Rules&lt;/h3&gt;
 &lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;***
@@ -304,18 +695,6 @@ function printHello(){
   &lt;li&gt;Applied syntax highlighting theme on posts.&lt;/li&gt;
   &lt;li&gt;Decorated posts’ css style.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;diary&quot;&gt;Diary&lt;/h2&gt;
-
-&lt;h3 id=&quot;looing-back-over-my-life&quot;&gt;Looing back over my life&lt;/h3&gt;
-
-&lt;p&gt;chine, and server by myself, I felt keenly the necessity of logging my development study.&lt;/p&gt;
-
-&lt;h3 id=&quot;plan&quot;&gt;Plan&lt;/h3&gt;
-
-&lt;p&gt;be accustomed to markdown and github. It seems to take a while for me to get familiar.&lt;/p&gt;
 
 &lt;hr /&gt;
 

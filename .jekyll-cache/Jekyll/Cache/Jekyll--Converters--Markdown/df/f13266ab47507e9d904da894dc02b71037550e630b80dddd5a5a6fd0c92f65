@@ -1,0 +1,40 @@
+I"m<h2 id="preface">Preface</h2>
+<p>Whenever I was surfing on the Internet, codes highlighted as fancy editor attracted me. When I started my blog few days ago, however, there were nothing else than monotonous texts. I wanted to make my code sexier, and <strong>rouge</strong> made it possible.</p>
+
+<h2 id="how-to-write-markdown">How to write markdown</h2>
+
+<h3 id="1-heading">1. Heading</h3>
+
+<h2 id="this-is-header-2">This is Header 2</h2>
+
+<hr />
+<ul>
+  <li>They are wrapped with <code class="language-plaintext highlighter-rouge">&lt;h?&gt;</code> tag when they are rendered.</li>
+</ul>
+
+<h3 id="2-paragraph">2. Paragraph</h3>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is first line.
+This is second line.  
+This is third line.
+</code></pre></div></div>
+<hr />
+
+<p>This is first line.
+This is second line.<br />
+This is third line.</p>
+
+<hr />
+<ul>
+  <li>They are wrapped with <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> tag when they are rendered.</li>
+  <li>If you want to make line break in paragraph, type two spaces and return. Or there would be a connected line.</li>
+  <li>If you want to write other paragraph, type return twice. And that paragraph will be wrapped with new <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> tag.</li>
+</ul>
+
+<h2 id="reference">Reference</h2>
+<ul>
+  <li><a href="https://rubygems.org/gems/rouge">Ruby Gem ‘rouge’</a></li>
+  <li><a href="http://rouge.jneen.net/v3.23.0/markdown/">Test your code on Rouge theme</a></li>
+  <li><a href="https://github.com/rouge-ruby/rouge">Rouge Github</a></li>
+</ul>
+
+:ET

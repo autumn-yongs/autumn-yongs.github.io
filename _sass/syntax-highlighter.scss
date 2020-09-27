@@ -1,4 +1,7 @@
 // custom syntax-hilighter
+.highlighter-rouge {
+	margin: 10px 0;
+}
 .highlight {
 	border-radius: 10px;
 	overflow-x: auto;
@@ -7,15 +10,17 @@
 	font-family: 'Source Code Pro', monospace;
 	font-size: small;
 }
-.highlight pre {
-	padding: 15px;
-}
 .language-plaintext {
 	background-color: lightgray;
 	padding: .2em .4em;
 	border-radius: .4em;
 	font-family: 'Source Code Pro', monospace;
 	color: #F053A8;
+}
+.language-emphasis {
+	font-family: 'Noto Sans KR', sans-serif;
+	color: crimson;
+	white-space: normal;
 }
 .language-text code {
 	color: lightgray;
