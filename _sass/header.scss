@@ -7,8 +7,17 @@ header {
 	height: 60px;
 	box-shadow: 0 1px 5px gray;
 	background-color: white;
-	color: black;
 	padding-left: 40px;
 	align-items: center;
 	z-index: 5;
+}
+
+#blog-title {
+	display: inline-block;
+	height: 30px;
+	padding: 3px 5px;
+	color: dimgray;
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-size: large;
+	letter-spacing: .15em;
 }

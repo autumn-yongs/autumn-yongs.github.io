@@ -1,0 +1,34 @@
+I"T<h1 id="27-sep-2020">27 Sep 2020</h1>
+
+<h2 id="today-i-learned">Today I Learned</h2>
+
+<h3 id="c">C++</h3>
+
+<p>I studied C++ to play in <a href="https://leetcode.com/">leetcode.com</a>. I’ve searched for how to be a nice programmer, and programming skill for algorithm seems like essential. I like solving mathematical problems, but I’m not sure that I would like solving algorithm problems in leetcode. I think… it will be a great challenge to me.</p>
+
+<h3 id="git">Git</h3>
+
+<p>I tried to post about Git today, but I failed. Egoing, the lecturer of Opentutorials, said in introduction of Git lecture, “Before learning Git, there’s something you need to know”, “Git is incredibly complex.” And I think that’s true. Before I post about Git on my blog, I think I have to learn more about it.</p>
+
+<h2 id="today-i-posted">Today I Posted</h2>
+
+<ul>
+  <li>I shared my experience on customizing Rouge theme and scrollbar.
+    <ul>
+      <li><a href="/jekyll/2020/09/27/Jekyll-1.html">[Jekyll] Syntax highlighting with Rouge</a></li>
+      <li><a href="/jekyll/2020/09/27/Jekyll-2.html">[Jekyll] Colorize text using Markdown</a></li>
+      <li><a href="/html/css/js/2020/09/27/HTML_CSS_JS.html">[CSS] Customize scrollbar on your web browser</a></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="tomorrow-ill-learn">Tomorrow I’ll learn</h2>
+<ul>
+  <li>Arranging concept and syntax of C++</li>
+  <li>Meta tag with viewport, responsive webite.</li>
+  <li>Study about how to interact with remote Git repository</li>
+  <li>Trying to solve some problems in <a href="https://leetcode.com/">leetcode.com</a></li>
+</ul>
+:ET

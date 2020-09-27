@@ -105,10 +105,21 @@
 
 #nav-box .contact p {
 	display: inline-block;
-	margin-left: 10px;
+	margin-left: 5px;
+	padding: 3px 5px;
+	border-radius: 10px;
 	font-size: small;
 }
 
+#nav-box .contact p,
+#nav-box .contact a {
+	color: black;
+	transition: .3s;
+}
+
+#nav-box .contact p:hover {
+	background-color: lightblue;
+}
 #nav-box ul {
 	list-style: none;
 	display: flex;
