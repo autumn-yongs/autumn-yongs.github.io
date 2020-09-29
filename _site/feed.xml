@@ -1,4 +1,137 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-09-27T14:54:08+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><entry><title type="html">[CSS] Customize scrollbar on your web browser</title><link href="http://0.0.0.0:4000/html/css/js/2020/09/27/HTML_CSS_JS.html" rel="alternate" type="text/html" title="[CSS] Customize scrollbar on your web browser" /><published>2020-09-27T00:00:00+00:00</published><updated>2020-09-27T00:00:00+00:00</updated><id>http://0.0.0.0:4000/html/css/js/2020/09/27/HTML_CSS_JS</id><content type="html" xml:base="http://0.0.0.0:4000/html/css/js/2020/09/27/HTML_CSS_JS.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-09-29T14:54:06+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><entry><title type="html">[GIT] Opentutorials_2: How to interact with remote repository with Git</title><link href="http://0.0.0.0:4000/git/2020/09/29/GIT.html" rel="alternate" type="text/html" title="[GIT] Opentutorials_2: How to interact with remote repository with Git" /><published>2020-09-29T00:00:00+00:00</published><updated>2020-09-29T00:00:00+00:00</updated><id>http://0.0.0.0:4000/git/2020/09/29/GIT</id><content type="html" xml:base="http://0.0.0.0:4000/git/2020/09/29/GIT.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+
+&lt;p&gt;You can work on a project without remote repository unless you were on the group. If not, you’ll need it. Group members have to share files through somewhere shared place. For that, remote repository, pushing, pulling, branching, and some functions of Git are required.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This article is a part of Egoing’s youtube lecture &lt;strong&gt;지옥에서 온 Git (Git from the hell)&lt;/strong&gt;. Contents might not be exactly same with the sequence of lectures as I reorganized that in my way.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://youtu.be/hFJZwOfme6w&quot;&gt;지옥에서 온 Git (Git from the hell)&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;Reading my article or not depends on you, but if you want to read super accurate and trustworthy document, take this Git’s official document.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://git-scm.com/book/en/v2&quot;&gt;Official Git Website&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;lets-move-on&quot;&gt;Let’s move on!&lt;/h2&gt;
+
+&lt;h3 id=&quot;setting-a-remote-repository-for-your-project&quot;&gt;Setting a remote repository for your project&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git remote -v&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;View your remote repositories. If you command it for the first time after you created the project with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git init&lt;/code&gt;, there would be nothing.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git remote add [name] [URL]&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Add information of remote repository in Git’s configuration file. If you don’t mind, just write [name] as ‘origin’. The reason is on below.&lt;/li&gt;
+      &lt;li&gt;
+        &lt;blockquote&gt;
+          &lt;p&gt;Naming remote repository as ‘origin’ is general, because console uses ‘origin’ as default remote repository when you omit it in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;push&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pull&lt;/code&gt; commands.&lt;/p&gt;
+
+          &lt;p&gt;If you don’t know about those commands, never mind. I will tell you about that on the next part of this article. Skip this, and come back here later.&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+      &lt;li&gt;For example, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git remote add origin [your Github repository URL]&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git remote -v&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Type this command again. Now you can see your remote repository is added.&lt;/li&gt;
+      &lt;li&gt;You can also check it in git’s configuration file. Command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git config --list&lt;/code&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;what-is-branch&quot;&gt;What is ‘branch’?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Before using remote repository, you have to know about branch. I won’t explain it in detail cause its content is super massive in itself. In this post, therefore, I’ll make it as simple as possible. Let’s talk about it later in detail. Let’s get started!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Git stores project’s status and history as a series of snapshots. We call each snapshot as ‘commit’.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;When you command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git commit&lt;/code&gt;, Git takes a snapshot and stores them as a tree object in the Git repository. In other words, Git makes an object(commit) and link it to other object which is made before.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You can run your project on just one track by linking new object to one of the most recent one, but you also can manage project on two or more tracks by ramifying new object from specific track, &lt;strong&gt;which is branching&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;One project can be managed with many branches, and the default branch among those is called &lt;strong&gt;master&lt;/strong&gt; branch.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;put-your-project-on-and-get-project-from-remote-repository&quot;&gt;Put your project on and Get project from remote repository&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git push origin master&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Literally, this command says, “Hey, Git. Push &lt;strong&gt;master&lt;/strong&gt; branch’s history to remote repository which is &lt;strong&gt;origin&lt;/strong&gt;.&lt;/li&gt;
+      &lt;li&gt;On your first try, this put your local project on remote repository. And on tries after that, this updates your remote repository whenever you type.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git pull origin&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;This causes exactly the reverse case against the former. This updates your local repository with remote one, while &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;push&lt;/code&gt; updates remote one with local one.&lt;/li&gt;
+      &lt;li&gt;Explaining what exactly happens in tree in the Git repository when you call this would confuse you. For now, never mind. I’ll explain it below. This command would not make errors unless you work in group.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git fetch origin&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;This gets data from origin, remote repository. But this does not update your local repository. That is what you have to do.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;what-happens-in-my-local-git-repository&quot;&gt;What happens in my local Git repository?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;I told you that the local Git repository stores snapshots as a tree object. And the tracks consist of several snapshots are called branches.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pull&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fetch&lt;/code&gt; make new branch when they are called. That branch ramifies from the last pushed object.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I said that the difference is on &lt;strong&gt;update&lt;/strong&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git fetch origin&lt;/code&gt; command makes new branch called &lt;strong&gt;origin/master&lt;/strong&gt;, but it does not merge it with original branch, master branch on local repository. You have to find differences between local and remote repository yourself and merge it personally.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;However, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git pull origin&lt;/code&gt; makes new branch and find differences itself. And then merge it with original branch immediately.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;We don’t have to find differences by ourselves when we call &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pull&lt;/code&gt;. Sounds great! But, sometimes, some problems arise on account of that.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;work-in-group-using-remote-repository&quot;&gt;Work in group using remote repository&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;You don’t have to worry about integrity of remote repository if you work alone. But there would be some problems when you work in group.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Suppose that you were working in specific branch(in this example, &lt;strong&gt;origin&lt;/strong&gt;) with your group members. You updated your local repository by commanding &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ git pull origin&lt;/code&gt; to modify some codes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;After that, other group member pushed their project while you were working on your local repository. You edited some codes and that was same part that the member modified.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You finished your work and tried to push your work on remote repository. But, the Git, eventually, rejected your request. The reason was, Git did not know which code it should choose.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;merging-with-newly-created-branch&quot;&gt;Merging with newly created branch&lt;/h3&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/hFJZwOfme6w&quot;&gt;지옥에서 온 Git (Git from the hell)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/en/v2&quot;&gt;Official Git Website&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/@pks2974/%EC%9E%90%EC%A3%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EA%B8%B0%EC%B4%88-git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0-533b3689db81&quot;&gt;Basic Git commands frequently being used&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://backlog.com/git-tutorial/kr/stepup/stepup3_1.html&quot;&gt;Git introduction, easy to understand&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="GIT" /><summary type="html">Preface</summary></entry><entry><title type="html">[CSS] Customize scrollbar on your web browser</title><link href="http://0.0.0.0:4000/html/css/js/2020/09/27/HTML_CSS_JS.html" rel="alternate" type="text/html" title="[CSS] Customize scrollbar on your web browser" /><published>2020-09-27T00:00:00+00:00</published><updated>2020-09-27T00:00:00+00:00</updated><id>http://0.0.0.0:4000/html/css/js/2020/09/27/HTML_CSS_JS</id><content type="html" xml:base="http://0.0.0.0:4000/html/css/js/2020/09/27/HTML_CSS_JS.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
 
 &lt;p&gt;As a new-comer to the blog world who is trying to customize blog by himself, built-in scrollbar provided by browser must be changed.&lt;/p&gt;
 
@@ -424,15 +557,19 @@ I want to emphasize this text!
   &lt;li&gt;Trying to solve some problems in &lt;a href=&quot;https://leetcode.com/&quot;&gt;leetcode.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><category term="TIL" /><summary type="html">27 Sep 2020</summary></entry><entry><title type="html">[GIT] Opentutorials_1: How to use Git on local</title><link href="http://0.0.0.0:4000/git/2020/09/26/GIT.html" rel="alternate" type="text/html" title="[GIT] Opentutorials_1: How to use Git on local" /><published>2020-09-26T00:00:00+00:00</published><updated>2020-09-26T00:00:00+00:00</updated><id>http://0.0.0.0:4000/git/2020/09/26/GIT</id><content type="html" xml:base="http://0.0.0.0:4000/git/2020/09/26/GIT.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
 
-&lt;p&gt;This article is a part of Egoing’s youtube lecture &lt;strong&gt;지옥에서 온 Git (Git from the hell)&lt;/strong&gt;. Contents might not be exactly same with the sequence of lectures as I reorganized that in my way.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;This article is a part of Egoing’s youtube lecture &lt;strong&gt;지옥에서 온 Git (Git from the hell)&lt;/strong&gt;. Contents might not be exactly same with the sequence of lectures as I reorganized that in my way.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;#reference&quot;&gt;지옥에서 온 Git (Git from the hell)&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;a href=&quot;https://youtu.be/hFJZwOfme6w&quot;&gt;지옥에서 온 Git (Git from the hell)&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Reading my article or not depends on you, but if you want to read super accurate and trustworthy document, take this Git’s official document.&lt;/p&gt;
+  &lt;p&gt;Reading my article or not depends on you, but if you want to read super accurate and trustworthy document, take this Git’s official document.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;#reference&quot;&gt;Official Git Website&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;a href=&quot;https://git-scm.com/book/en/v2&quot;&gt;Official Git Website&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;h2 id=&quot;lets-move-on&quot;&gt;Let’s move on!&lt;/h2&gt;
+
+&lt;h3 id=&quot;what-is-git&quot;&gt;What is Git?&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Git is a &lt;strong&gt;version control system&lt;/strong&gt;.&lt;/li&gt;
