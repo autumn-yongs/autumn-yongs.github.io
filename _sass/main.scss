@@ -6,10 +6,27 @@
 	text-decoration: none;
 }
 
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url("/assets/fonts/NotoSansKR-Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: 'Baloo Tammudu 2';
+	src: url("/assets/fonts/BalooTammudu2-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: 'Source Code Pro';
+	src: url("/assets/fonts/SourceCodePro-Regular.ttf") format("truetype");
+}
+
 body {
 	background-color: linen;
 	font-family: 'Noto Sans KR', sans-serif;
 }
+
+
 
 ::-webkit-scrollbar {
   	height: 8px;
