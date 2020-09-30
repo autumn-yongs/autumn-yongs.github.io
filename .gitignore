@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 _site
 .DS_Store
 .jekyll
@@ -13,3 +14,9 @@ package.json
 _site/
 .sass-cache/
 .jekyll-metadata
+=======
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+>>>>>>> 00ba9b27c56b9bc723dfd62721ef7fd3267cc2e1
