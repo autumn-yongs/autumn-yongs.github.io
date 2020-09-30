@@ -30,9 +30,7 @@ unpublished         : false
 # Plugins
 whitelist           : []
 plugins             : 
-  - jekyll-feed
   - jekyll-sitemap
-  - jekyll-seo-tag
   - rouge
 
 # Conversion
