@@ -4,6 +4,7 @@
 }
 .highlight {
 	border-radius: 10px;
+	box-shadow: 5px 5px 10px 1px gray;
 	overflow-x: auto;
 }
 .highlight code {
@@ -12,7 +13,7 @@
 }
 .language-plaintext {
 	background-color: lightgray;
-	padding: .2em .4em;
+	padding: .05em .4em;
 	border-radius: .4em;
 	font-family: 'Source Code Pro', monospace;
 	color: #F053A8;
