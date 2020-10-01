@@ -1,6 +1,7 @@
 ---
 title: "[CSS] Customize scrollbar on your web browser"
 categories: [ HTML/CSS/JS ]
+comments: true
 ---
 
 ## Preface
