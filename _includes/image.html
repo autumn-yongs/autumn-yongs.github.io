@@ -1,0 +1,9 @@
+<figure class="image">
+  	<img src="{{ include.url }}" alt="{{ include.description }}" size="{{ include.size }}">
+  	<figcaption>
+	  	{{ include.description }}
+	  	{% if include.source %}
+		<span>| Source From : <a href="{{ include.source_url }}" target="_blank">{{ include.source }}</a></span>
+	  	{% endif %}
+	</figcaption>
+</figure>

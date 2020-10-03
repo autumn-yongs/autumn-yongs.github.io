@@ -5,6 +5,12 @@
 }
 
 #post .date {
+	display: inline;
+	color: gray;
+}
+
+#post .updated {
+	display: inline;
 	color: gray;
 }
 
@@ -45,8 +51,43 @@
 	background-color: powderblue;
 }
 
-#post .blank {
-	height: 300px;
+#post .card {
+	margin: 20px auto;
+	margin-top: 80px;
+	padding: 20px 10px;
+	max-width: 700px;
+	background-color: white;
+	border-radius: 20px;
+	transition: .3s;
+}
+
+#post .card:hover {
+	box-shadow: 5px 5px 10px dimgray;
+}
+
+#post .card .blog {
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-size: large;
+	color: dimgray;
+	letter-spacing: .15em;
+}
+
+#post .card .description {
+	font-size: .8em;
+}
+
+#post .card hr {
+	margin: 2px 0;
+}
+
+#post .card .license {
+	text-align: center;
+	font-size: .8em;
+	margin: 5px 0;
+}
+
+#post .card .license a {
+	margin-top: 0;
 }
 
 #post blockquote {
@@ -54,4 +95,45 @@
 	margin: 20px 0;
 	color: dimgray;
 	border-left: .25em solid cornflowerblue;
+}
+
+#post figure>img {
+	display: block;
+	margin: auto;
+	box-shadow: 5px 5px 10px dimgray;
+}
+
+#post figure>img[size="xs-small"] {
+	width: 80%;
+	max-width: 70px;
+}
+
+#post figure>img[size="x-small"] {
+	width: 80%;
+	max-width: 150px;
+}
+
+#post figure>img[size="small"] {
+	width: 80%;
+	max-width: 300px;
+}
+
+#post figure>img[size="medium"] {
+	width: 80%;
+	max-width: 700px;
+}
+
+#post figure>img[size="large"] {
+	width: 80%;
+	max-width: 1200px;
+}
+
+#post figure>figcaption {
+	display: block;
+	width: 90%;
+	max-width: 500px;
+	margin: 10px auto;
+	text-align: center;
+	font-size: small;
+	color: dimgray;
 }

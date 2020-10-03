@@ -5,9 +5,32 @@ layout: default
 <div id="post">
     <h2 class="title">{{ page.title }}</h2>
     <p class="date">{{ page.date | date_to_string }}</p>
+	{% if page.updated %}
+	<p class="updated">| Last edited on {{ page.updated | date_to_string }}</p>
+	{% endif %}
     <hr />
     {{ content }}
-    <div class="blank"></div>
+    <div class="card">
+		<p class="blog">
+			Autumn-yongs' blog
+		</p>
+		<p class="description">
+			Hello, I'm autumn-yongs! Thank you for visiting my blog. Feel free to browse and have a look around. Welcome relevant and respectful comments. Off-topic comments, however, may be removed without any warnings.
+		</p>
+		<hr />
+		{% if page.license == "CC-BY-SA" %}
+			<p class="license">
+				This post is available under the licence :
+				<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">Creative Commons [CC-BY-SA]</a>
+			</p>
+		{% else %}
+			<p class="license">
+				This post is available under the licence :
+				<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">Creative Commons [CC-BY-NC-SA]</a>.
+			</p>
+		{% endif %}
+		<hr />
+	</div>
 	{% if page.comments %}
 		<div id="disqus_thread"></div>
 		<script>
@@ -23,6 +46,5 @@ layout: default
 		<noscript>Please enable JavaScript to view the
 			<a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 		</noscript>
-    	<div class="blank"></div>
 	{% endif %}
 </div>
