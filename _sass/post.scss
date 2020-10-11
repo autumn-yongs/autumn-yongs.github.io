@@ -137,3 +137,88 @@
 	font-size: small;
 	color: dimgray;
 }
+
+#post .content-table{
+	text-align: center;
+	background-color: white;
+	margin: 40px auto;
+	width: 90%;
+	max-width: 700px;
+	box-shadow: 5px 5px 10px dimgray;
+	border-radius: 10px;
+}
+
+#post .content-table h3{
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+}
+
+#post .content-table input{
+	display: none;
+}
+
+#post .content-table div{
+	display: inline-block;
+}
+
+#post .content-table label{
+	display: block;
+	position: relative;
+	top: 2px;
+	width: 36px;
+	height: 20px;
+	border-radius: 36px;
+	box-shadow: 0 0 5px dimgray;
+	background-color: white;
+	transition: all 0.3s ease;
+}
+
+#post .content-table label > span{
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 2px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25), 0 3px 3px 0 rgba(0, 0, 0, 0.15);
+	transition: all 0.3s cubic-bezier(0.275, -0.45, 0.725, 1.45);
+	background-color: cornflowerblue;
+}
+
+#post .content-table input:active + div label,
+#post .content-table input:checked + div label {
+	background-color: cornflowerblue;
+	span{
+		left: 19px;
+		background-color: white;
+	}
+}
+
+#post .content-table ul,
+#post .content-table ol{
+	visibility: hidden;
+	text-align: left;
+	height: 0;
+	margin: 0;
+	opacity: 0;
+	transition: all .5s ease;
+}
+
+#post .content-table input:active ~ ul,
+#post .content-table input:active ~ ol,
+#post .content-table input:checked ~ ul,
+#post .content-table input:checked ~ ol {
+	visibility: visible;
+	height: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	opacity: 1;
+	a{
+		margin: 0;
+	}
+}
+
+
