@@ -1,0 +1,29 @@
+<div class="content-table">
+	<h3>Table of contents</h3>
+	<input type="checkbox" id="toggle-alarm" name="" value="" />
+	<div>
+		<label for="toggle-alarm"><span /></label>
+	</div>
+	{% if include.type == "ol" %}
+	<ol>
+		{%- assign contents = include.contents  | split: ", " -%}
+		{%- assign num = 0 -%}
+		{% for content in contents %}
+			{%- assign href = content | downcase | replace: " ", "-" | remove: "?" | remove: "!" -%}
+			<li>
+				<a href="#{{ num | append: '-' | append: href }}">{{ content }}</a>
+			</li>
+		{% endfor %}
+	</ol>
+	{% else %}
+	<ul>
+		{%- assign contents = include.contents  | split: ", " -%}
+		{% for content in contents %}
+			{%- assign href = content | downcase | replace: " ", "-" | remove: "?" | remove: "!" -%}
+			<li>
+				<a href="#{{ href }}">{{ content }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+</div>
