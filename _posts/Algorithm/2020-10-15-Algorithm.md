@@ -9,6 +9,8 @@ comments: true
 
 Sorting would be the first well-formed algorithm that beginners encounter. This is the very fundamental technique in most of problem solvings. For example, other algorithms, such as search and merge algorithms, require sorted input data. I firmly believe that sorting algorithm is the most useful to know among innumerable algorithms.
 
+{% include table-of-contents.html contents="Sorting Algorithms, Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort, Time complexity, Other sorting algorithms" %}
+
 ## Sorting Algorithms
 
 ### Sorting Algorithms
@@ -253,11 +255,15 @@ void quickSort(int arr[], int left, int right){
 
 * Most of sorting algorithms have similar pattern: picking one element and then compare it with other elements. As sorting algorithms pick every element and compare it with every element, most of algorithms have O(n^2) complexity.
 
-* Then how O(n log n)? Draw graph of `y = x^2` and `y = x log x`. The difference between those is not meaningful on the small value `x`. The bigger `x` is, however, the gap between `y` widens correspondingly. This means that the O(n log n) algorithms are absolutely outstanding than the O(n^2) algorithms when it operates on very long array.
+* Then how O(n log n) is possible? Draw graph of `y = x^2` and `y = x log x`. The difference between those is not meaningful on the small value `x`. The bigger `x` is, however, the gap between `y` widens correspondingly. This means that the O(n log n) algorithms are absolutely outstanding than the O(n^2) algorithms when it operates on very long array.
 
-* The idea is on **dividing the data**. Separating the problems into easily solvable ones has great effect on time efficiency. 
+* The idea is on **dividing the data**. Separating the problems into easily solvable ones has great effect on time efficiency.
+  - Orinial array's length is `n`. And dividing it half over and over again until the devided array's length becomes 1. Assuming that `k` iterations need until that, `n = 2^k`.
+  - The dividing time complexity of sorting algorithm can be expressed as the number of dividing, `k`. And each phase needs O(n) time as they need to sort each array. So, total time complexity becomes O(nk) = O(n log n).
 
-### Other algorithms
+* This pattern is very common in other **divide and conquer** algorithms which divide data in half.
+
+### Other sorting algorithms
 
 * Googling **Sorting Algorithms**. There would be a lot of algorithms: Heap Sort, Radix Sort, Bucket Sort, etc. The five algorithms which I showed you in this post are not only well-known but also fundamental ones. If you want to study more about sorting algorithms, googling yourself or refer to this site.
 
